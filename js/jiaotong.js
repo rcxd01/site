@@ -1,0 +1,3 @@
+document.writeln("<li><a class=\"xdhbg\" href=\"\/biaozhi\"><div class=\"xdh_img xico48\"><\/div><div class=\"xdh_bt\">交通标志大全<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/huoche\"><div class=\"xdh_img xico69\"><\/div><div class=\"xdh_bt\">列车时刻表<\/div><\/a><\/li>")
+document.writeln("<li><a class=\"xdhbg\" href=\"\/chepai\"><div class=\"xdh_img xico83\"><\/div><div class=\"xdh_bt\">车牌号码查询<\/div><\/a><\/li>")

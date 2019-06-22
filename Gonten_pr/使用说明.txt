@@ -1,0 +1,8 @@
+本程序无直接查询功能，需要在pr.php后加上“?www.yowao.com”来查询，以图片形式输出。
+
+官方主页：http://tool.yowao.com
+
+官方论坛：http://bbs.yowao.com
+
+源码下载更新：http://www.yowao.com
+

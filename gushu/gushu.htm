@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />  
+<META http-equiv=content-type content="text/html; charset=gb2312">
+<LINK media=all href="gushu.css" type=text/css rel=stylesheet>
+<center>
+<SCRIPT language=javascript src="gushu.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/js/jiuyaocha.js" type=text/javascript></SCRIPT>
+</HEAD>
+<BODY onLoad="document.getElementById('s').focus();">
+<center>
+<DIV id=content>
+  <DIV id=actions>每页<SELECT name="select" id=x>
+      <OPTION value=5>5</OPTION>
+      <OPTION value=8 selected>8</OPTION>
+      <OPTION value=9>9</OPTION>
+      <OPTION value=10>10</OPTION>
+      <OPTION value=11>11</OPTION>
+      <OPTION value=12>12</OPTION>
+      <OPTION value=13>13</OPTION>
+      <OPTION value=14>14</OPTION>
+      <OPTION value=15>15</OPTION>
+      <OPTION value=16>16</OPTION>
+      <OPTION value=17>17</OPTION>
+      <OPTION value=18>18</OPTION>
+      <OPTION value=19>19</OPTION>
+      <OPTION value=20>20</OPTION>
+    </SELECT>竖行，每竖行<SELECT name="select" id=y>
+    <OPTION value=5>5</OPTION>
+    <OPTION value=8 selected>8</OPTION>
+    <OPTION value=9>9</OPTION>
+    <OPTION value=10>10</OPTION>
+    <OPTION value=11>11</OPTION>
+    <OPTION value=12>12</OPTION>
+    <OPTION value=13>13</OPTION>
+    <OPTION value=14>14</OPTION>
+    <OPTION value=15>15</OPTION>
+    <OPTION value=16>16</OPTION>
+    <OPTION value=17>17</OPTION>
+    <OPTION value=18>18</OPTION>
+    <OPTION value=19>19</OPTION>
+    <OPTION value=20>20</OPTION>
+    <OPTION value=25>25</OPTION>
+    <OPTION value=30>30</OPTION>
+  </SELECT>个字使用<SELECT name="select" id=tbl>
+<OPTION value=0>粗实线+细实线</OPTION> 
+<OPTION selected value=1>双实线+细实线</OPTION> 
+<OPTION value=2>细实线+细虚线</OPTION> 
+<OPTION value=3>蝌蚪往回游</OPTION> 
+<OPTION value=4>一切向上看</OPTION> 
+<OPTION value=5>清风竹节型</OPTION> 
+<OPTION value=6>密码错乱型</OPTION> 
+<OPTION value=7>红星闪闪型</OPTION> 
+<OPTION value=8>霓虹灯闪烁</OPTION> 
+<OPTION value=9>我心依旧型</OPTION> 
+<OPTION value=10>大圈套小圈</OPTION> 
+<OPTION value=11>鱼儿水中游</OPTION> 
+<OPTION value=12>阿弥陀佛型</OPTION> 
+<OPTION value=13>清爽无边框</OPTION>
+  </SELECT>边框<A class=href="javascript:copyresult();"></A> </DIV>
+<DIV id=source>
+  <TEXTAREA id=s rows=10 class="sr" onFocus=this.select() onclick=this.focus() onkeydown=ctlent()>选择转换风格后，把您要转换的文字输入到这个文本框中，然后点击开始转换按钮，系统就会自动生成相应的竖排古文</TEXTAREA> 
+    </DIV>
+<DIV id=target>
+  <input name="zh" type="submit" class="a" id="zh" " value="开 始 转 换" onclick=javascript:convert(); >
+&nbsp;&nbsp; <input name="zh" type="submit" class="a" id="zh" "  value="复 制 结 果"  onclick="copy(document.getElementById('t').value)">
+&nbsp;&nbsp; <input name="zh" type="submit" class="a" id="zh" "  onclick="s.value=''"  value="清 空"></DIV>
+<DIV id=target>
+  <textarea name="textarea2" class="sr" cols=105 rows=13 readonly onclick="copy(this.value)" id=t onMouseOver=this.focus();this.select();>
+╔═╤═╤═╤═╤═╤═╤═╤═╗
+║　│竖│会│转│中│输│把│选║
+║　│排│自│换│，│入│您│择║
+║要│古│动│按│然│到│要│转║
+║哇│文│生│钮│后│这│转│换║
+║查│　│成│，│点│个│换│风║
+║询│　│相│系│击│文│的│格║
+║工│　│应│统│开│本│文│后║
+║具│　│的│就│始│框│字│，║
+╚═╧═╧═╧═╧═╧═╧═╧═╝
+  </textarea>
+</DIV></center>
+
+</BODY></HTML>

@@ -1,0 +1,156 @@
+TABLE {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "Arial", "宋体"; FONT-SIZE: 12px
+}
+.top1 {
+	BACKGROUND-IMAGE: url(images/top_bg.gif); WIDTH: 63px; COLOR: #ffffff; FONT-SIZE: 14px; FONT-WEIGHT: bold; PADDING-TOP: 23px
+}
+.top2 {
+	WIDTH: 63px; COLOR: #3b7fc2; FONT-SIZE: 14px; FONT-WEIGHT: bold; PADDING-TOP: 23px
+}
+.top3 {
+	WIDTH: 50px; COLOR: #3b7fc2; FONT-SIZE: 14px; FONT-WEIGHT: bold; PADDING-TOP: 23px
+}
+.searchbg {
+	BACKGROUND-IMAGE: url(images/search_bg.gif); HEIGHT: 80px
+}
+.searchinput {
+	BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; PADDING-LEFT: 3px; FONT-FAMILY: "Arial", "宋体"; HEIGHT: 25px; FONT-SIZE: 14px; BORDER-TOP: #999999 1px solid; BORDER-RIGHT: #999999 1px solid; PADDING-TOP: 3px
+}
+.searchbutton {
+	PADDING-LEFT: 3px; FONT-FAMILY: "Arial", "宋体"; HEIGHT: 26px; FONT-SIZE: 14px; PADDING-TOP: 0px
+}
+.graytxt {
+	COLOR: #6e6e6e
+}
+A:link {
+	COLOR: #02309f; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #02309f; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #02309f; TEXT-DECORATION: underline
+}
+.1:link {
+	COLOR: #3b7fc2; TEXT-DECORATION: underline
+}
+.1:visited {
+	COLOR: #3b7fc2; TEXT-DECORATION: underline
+}
+.1:hover {
+	COLOR: #3b7fc2; TEXT-DECORATION: none
+}
+.2:link {
+	COLOR: #484848; TEXT-DECORATION: none
+}
+.2:visited {
+	COLOR: #484848; TEXT-DECORATION: none
+}
+.2:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.3:link {
+	COLOR: #02309f; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.3:visited {
+	COLOR: #02309f; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.3:hover {
+	COLOR: #02309f; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.4:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.4:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.4:hover {
+	COLOR: #02309f; TEXT-DECORATION: underline
+}
+.5:link {
+	COLOR: #02309f; TEXT-DECORATION: underline
+}
+.5:visited {
+	COLOR: #02309f; TEXT-DECORATION: underline
+}
+.5:hover {
+	COLOR: #02309f; TEXT-DECORATION: none
+}
+.6:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.6:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.6:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.14txt {
+	FONT-SIZE: 14px
+}
+.title1 {
+	COLOR: #666666; FONT-WEIGHT: bold
+}
+.hottitle {
+	BACKGROUND-IMAGE: url(images/hot_title_bg.gif); FONT-WEIGHT: bold
+}
+.t1 TD {
+	BORDER-BOTTOM: #cccccc 1px dotted
+}
+.dot {
+	BACKGROUND-IMAGE: url(images/dot.gif); HEIGHT: 1px
+}
+BODY {
+	TEXT-ALIGN: center; MARGIN: 0px auto
+}
+.12txt {
+	FONT-FAMILY: "Verdana", "宋体"; FONT-SIZE: 12px
+}
+A:link {
+	COLOR: #02309f; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #02309f; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #02309f; TEXT-DECORATION: underline
+}
+.top-font {
+	FONT-FAMILY: "Verdana", "宋体"; COLOR: #ddedfd; FONT-SIZE: 12px
+}
+.toplink:link {
+	COLOR: #ddedfd; TEXT-DECORATION: none
+}
+.toplink:visited {
+	COLOR: #ddedfd; TEXT-DECORATION: none
+}
+.toplink:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.topm:link {
+	COLOR: #ffffff; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.topm:visited {
+	COLOR: #ffffff; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.topm:hover {
+	COLOR: #ffffff; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.topmenu11 {
+	BACKGROUND-IMAGE: url(http://www.tvsou.com/images/menu_11.gif); TEXT-ALIGN: center; WIDTH: 60px; HEIGHT: 28px; PADDING-TOP: 3px
+}
+.topmenu12 {
+	BACKGROUND-IMAGE: url(http://www.tvsou.com/images/menu_12.gif); TEXT-ALIGN: center; WIDTH: 60px; HEIGHT: 28px; PADDING-TOP: 3px
+}
+.topmenu21 {
+	BACKGROUND-IMAGE: url(http://www.tvsou.com/images/menu_21.gif); TEXT-ALIGN: center; WIDTH: 80px; HEIGHT: 28px; PADDING-TOP: 3px
+}
+.topmenu22 {
+	BACKGROUND-IMAGE: url(http://www.tvsou.com/images/menu_22.gif); TEXT-ALIGN: center; WIDTH: 80px; HEIGHT: 28px; PADDING-TOP: 3px
+}
+.search-input {
+	BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; PADDING-LEFT: 3px; FONT-FAMILY: "Verdana", "宋体"; HEIGHT: 23px; FONT-SIZE: 14px; BORDER-TOP: #999999 1px solid; BORDER-RIGHT: #999999 1px solid; PADDING-TOP: 3px
+}
+.top-menu2 {
+	FONT-FAMILY: "Verdana", "宋体"; COLOR: #55b2f5; FONT-SIZE: 12px
+}

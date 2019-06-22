@@ -1,0 +1,12 @@
+document.writeln("<li><a class=\"xdhbg\" href=\"\/jsq\"><div class=\"xdh_img xico36\"><\/div><div class=\"xdh_bt\">智能计算器<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/wendu\"><div class=\"xdh_img xico37\"><\/div><div class=\"xdh_bt\">温度换算器<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/changdu\"><div class=\"xdh_img xico38\"><\/div><div class=\"xdh_bt\">长度换算器<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/zhongliang\"><div class=\"xdh_img xico39\"><\/div><div class=\"xdh_bt\">重量换算器<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/mianji\"><div class=\"xdh_img xico40\"><\/div><div class=\"xdh_bt\">面积换算器<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/reliang\"><div class=\"xdh_img xico41\"><\/div><div class=\"xdh_bt\">功\/能\/热量换算<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/tiji\"><div class=\"xdh_img xico42\"><\/div><div class=\"xdh_bt\">体积容量换算<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/gonglv\"><div class=\"xdh_img xico43\"><\/div><div class=\"xdh_bt\">功率换算器<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/yali\"><div class=\"xdh_img xico44\"><\/div><div class=\"xdh_bt\">压力换算器<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/nianling\"><div class=\"xdh_img xico52\"><\/div><div class=\"xdh_bt\">年龄计算器<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/tizhi\"><div class=\"xdh_img xico53\"><\/div><div class=\"xdh_bt\">体质指数计算<\/div><\/a><\/li>");
+document.writeln("<li><a class=\"xdhbg\" href=\"\/riqicha\"><div class=\"xdh_img xico68\"><\/div><div class=\"xdh_bt\">两日距离天数计算<\/div><\/a><\/li>")
