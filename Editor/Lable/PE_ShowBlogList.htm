@@ -1,0 +1,100 @@
+﻿<html>
+<head>
+<title>��ʾ��Ʒ������</title>
+<script language="javascript">
+function objectTag() {
+    var reval,AnnouceNum,Elite,Hot;
+    for (var i=0;i<document.form1.Elite.length;i++){
+    var PowerEasy = document.form1.Elite[i];
+    if (PowerEasy.checked==true)
+        Elite = PowerEasy.value
+    }
+    for (var i=0;i<document.form1.Hot.length;i++){
+    var PowerEasy = document.form1.Hot[i];
+    if (PowerEasy.checked==true)
+        Hot = PowerEasy.value
+    }
+    reval = '{$ShowBlogList('+document.form1.ListNum.value+','+document.form1.ClassID.value+','+document.form1.ShowType.selectedIndex+','+Elite+','+Hot+','+document.form1.imgH.value+','+document.form1.imgW.value+','+document.form1.IntroNum.value+','+document.form1.Imgstat.selectedIndex+','+document.form1.ShowMore.value+','+document.form1.ColNum.value+')}';
+    window.returnValue = reval;
+    window.close();
+}
+</script>
+<link href='Admin_Style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<form name="form1">
+<table width="400" width='100%' border='0' align='center' align='center' cellpadding='2' cellspacing='1' class='border'>
+    <tr class='title'>
+      <td colspan="2" align="center"><strong>��ʾ��Ʒ������</strong></td>
+    </tr>
+    <tr  class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>��ʾ�����У�</td>
+      <td ><input name="ListNum" type="text" size="15" value="1"></td>
+    </tr>
+    <tr  class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>��ʾ��ĿID��</td>
+      <td ><input name="ClassID" type="text" size="15" value="0"></td>
+    </tr>
+    <tr class=tdbg>
+      <td width="130" align=right height=25 class='tdbg5'>��ʾ��ʽ���ࣺ</td>
+      <td height=25>
+        <Select  name="ShowType" >
+            <Option value=0 selected>��ͨ</Option> 
+            <Option value=1>��ʾͷ��˵��</Option>
+            <Option value=2>��ʾͷ�񵫲���ʾ˵��</Option>
+        </Select> 
+      </td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>�Ƽ���</td>
+      <td >
+        ��ʾ�Ƽ�<Input TYPE='radio' Name='Elite' value='True' >
+        ��ʾ���Ƽ�<Input TYPE='radio' Name='Elite' value='False' checked>
+      </td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>�ȵ㣺</td>
+      <td >
+        ��ʾ�ȵ�<Input TYPE='radio' Name='Hot' value='True' >
+        ��ʾ���ȵ�<Input TYPE='radio' Name='Hot' value='False' checked>
+      </td>
+    </tr>
+    </tr>
+    <tr class='tdbg'>
+        <td align="right" width="30%" class='tdbg5'>ͷ��߶ȣ�</td>
+        <td ><input name="imgH" type="text" size="15" value="50"></td>
+    </tr>
+    <tr  class='tdbg'>
+        <td align="right" width="30%" class='tdbg5'>ͷ���ȣ�</td>
+        <td ><input name="imgW" type="text" size="15" value="50"></td>
+    </tr>
+    <tr  class='tdbg'>
+        <td align="right" width="30%" class='tdbg5'>˵��������</td>
+        <td ><input name="IntroNum" type="text" size="15" value="30"></td>
+    </tr>
+    <tr class=tdbg>
+        <td width="130" align=right height=25 class='tdbg5'>ͼƬ�����ֵ����λ�ã�</td>
+        <td height=25>
+            <Select  name="Imgstat" > 
+              <Option value=0 selected>ͼ��</Option> 
+              <Option value=1>ͼ��</Option>
+              <Option value=2>ͼ��</Option>
+              <Option value=3>ͼ��</Option>
+            </Select> 
+        </td>
+    </tr>
+    <tr  class='tdbg'>
+        <td align="right" width="30%" class='tdbg5'>"����"����ʾ���֣�</td>
+        <td ><input name="ShowMore" type="text" size="15" value="none">������Ϊnoneʱ����ʾ</td>
+    </tr>
+    <tr  class='tdbg'>
+        <td align="right" width="30%" class='tdbg5'>��ʾ������</td>
+        <td ><input name="ColNum" type="text" size="15" value="2"></td>
+    </tr>
+    <tr class='tdbg'>
+        <td colspan=2 align='center'><input TYPE='button' value=' ȷ �� ' onCLICK='objectTag()'></td>
+    </tr>
+    </table>
+</form>
+</body>
+</html>

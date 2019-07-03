@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<script language="javascript">
+function objectTag() {
+    
+	//alert(document.form1.CommandType.length);
+    var iCommandType;
+    for(var i =0; i< document.form1.CommandType.length; i++)
+    {
+        if(document.form1.CommandType[i].checked)
+        {
+            iCommandType = document.form1.CommandType[i].value;
+        }
+    }
+    
+    strJS="{$SupplyInfoType(";
+	strJS+=document.form1.pageType.value;
+    strJS+=","+iCommandType;
+    strJS+=","+document.form1.iCols.value;
+	strJS+=","+document.form1.iLength.value;
+    strJS+=","+document.form1.ShowNum.value;
+	strJS+=","+document.form1.iWidth.value;
+    strJS+=","+document.form1.iHeight.value;
+	strJS+=")}";
+	window.returnValue = strJS;
+	window.close();
+}
+</script>
+<link href='Admin_Style.css' rel='stylesheet' type='text/css'>
+<base target="_self">
+</HEAD>
+
+<BODY>
+<form name="form1">
+<table width='100%' border='0' align='center' cellpadding='2' cellspacing='1' class='border'>  
+    <tr class=title>
+      <td align=middle colSpan=3 height=22><STRONG>������Ϣ�б��ǩ </STRONG></td>
+    </tr>
+    <tr class=tdbg>
+      <td width="130" align=right height=25><STRONG>��ǩ���ͣ�</STRONG></td>
+      <td height=25>
+        <SELECT NAME="pageType">
+            <Option value="0">0</Option>
+            <Option value="1">1</Option>
+            <Option value="2">2</Option>
+			<Option value="3">3</Option>
+        </SELECT>
+      </td>
+      <td>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0--������Ϣ��ǩ&nbsp;1--�ȵ���Ϣ��ǩ<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2--�Ƽ���Ϣ��ǩ&nbsp;3--���´�ͼƬ��ǩ
+      </td>
+    </tr>
+    </tr>
+    <tr class=tdbg>
+      <td width="130" align=right height=25><STRONG>�Ƽ����ͣ�</STRONG></td>
+      <td height=25>
+          <INPUT TYPE="radio" NAME="CommandType" value="0" checked>���Ƽ�<br>
+          <INPUT TYPE="radio" NAME="CommandType" value="1">Ƶ���Ƽ�<br>
+          <INPUT TYPE="radio" NAME="CommandType" value="2">��Ŀ�Ƽ�<br>
+		  <INPUT TYPE="radio" NAME="CommandType" value="3">�����Ƽ���Ϣ
+      </td>
+      <td></td>
+    </tr>
+    <tr class=tdbg>
+      <td width="130" align=right height=25><STRONG>��ʾ����������</STRONG></td>
+      <td height=25><INPUT TYPE="text" NAME="iCols" size="4" value="1"></td>
+      <td>
+        <font color=#0000FF>˵����</font>ֻ�б�ǩ������һ�ж���ʱ
+      </td>
+    </tr>
+    <tr class=tdbg>
+      <td width="130" align=right height=25><STRONG>��ʾ���ⳤ�ȣ�</STRONG></td>
+      <td height=25><INPUT TYPE="text" NAME="iLength" size="4" value="100"></td>
+      <td></td>
+    </tr>
+     <tr class=tdbg>
+      <td width="130" align=right height=25><STRONG>Ƶ����ҳ��ʾ��Ϣ����</STRONG></td>
+      <td height=25>
+          ��ʾ��Ϣ����<INPUT TYPE="text" NAME="ShowNum" size="4" Value="10">
+      </td>
+      <td></td>
+    </tr>
+	<tr class=tdbg>
+      <td width="130" align=right height=25><STRONG>ͼƬ��Ϣ�Ŀ�͸ߣ�</STRONG></td>
+      <td height=25>
+          ͼƬ��ʾ��ȣ�<INPUT TYPE="text" NAME="iWidth" size="4" Value="0"><br>
+          ͼƬ��ʾ�߶ȣ�<INPUT TYPE="text" NAME="iHeight" size="4" Value="0">
+      </td>
+      <td></td>
+    </tr>
+    
+    <tr class='tdbg'>
+		<td colspan=3 align='center'><input TYPE='button' value=' ȷ �� ' onCLICK='objectTag()'> </td>
+	</tr>
+    </form>
+	</Table>
+</BODY>
+</HTML>

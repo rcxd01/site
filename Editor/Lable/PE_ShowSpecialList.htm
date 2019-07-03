@@ -1,0 +1,83 @@
+﻿<html>
+<head>
+<title>��ʾָ��Ƶ��ר��</title>
+<script language="javascript">
+function objectTag() {
+var reval;
+var IsElite;
+var OpenType;
+
+for (var i=0;i<document.form1.IsElite.length;i++){
+var PowerEasy = document.form1.IsElite[i];
+if (PowerEasy.checked==true)
+    IsElite = PowerEasy.value
+}
+for (var i=0;i<document.form1.OpenType.length;i++){
+var PowerEasy = document.form1.OpenType[i];
+if (PowerEasy.checked==true)
+    OpenType = PowerEasy.value
+}
+reval = '{$ShowSpecialList('+document.form1.ChannelID.value+','+IsElite+','+document.form1.SpecialNum.value+','+document.form1.ShowPropertyType.value+','+OpenType+','+document.form1.Cols.value+')}';
+window.returnValue = reval;
+window.close();
+}
+//=================================================
+//��������IsDigit()
+//��  �ã�����Ϊ����
+//=================================================
+function IsDigit()
+{
+  return ((event.keyCode >= 48) && (event.keyCode <= 57));
+}
+//-->
+</script>
+<link href='Admin_Style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<form name="form1">
+  <table width="320" width='100%' border='0' align='center' align='center' cellpadding='2' cellspacing='1' class='border'>
+    <tr class='title'>
+      <td colspan="2" align="center"><strong>��ʾָ��Ƶ��ר�⣺</strong></td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" class='tdbg5'>Ƶ��ID��</td>
+      <td>
+        <Input name="ChannelID" type="text" size="10" value="" ONKEYPRESS="javascript:event.returnValue=IsDigit()"></td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" width="40%" class='tdbg5'>�Ƿ����Ƽ�ר�⣺</td>
+      <td>
+        <Input type="radio" name="IsElite" value="True" checked> ��
+        <Input type="radio" name="IsElite" value="False" > ��
+      </td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" class='tdbg5'>��ʾ���ٸ�ר�����ƣ�</td>
+      <td>
+        <Input name="SpecialNum" type="text" size="20" value=""></td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" class='tdbg5'>ר��СͼƬ��</td>
+      <td>
+        <Input name="ShowPropertyType" type="text" size="20" value="0"><br><font color='blue'>��ʾǰ��Сͼ�꣬0Ϊ����ʾ��1Ϊ���ţ�����ΪСͼƬ��/images/Special_List*.gif</font></td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" width="40%" class='tdbg5'>�򿪷�ʽ��</td>
+      <td>
+        <Input type="radio" name="OpenType" value="0" checked> ԭ���ڴ�
+        <Input type="radio" name="OpenType" value="1" > �´��ڴ�
+      </td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" class='tdbg5'>ÿ�е�������</td>
+      <td>
+        <Input name="Cols" type="text" size="20" value="0" ONKEYPRESS="javascript:event.returnValue=IsDigit()"></td>
+    </tr>
+    <tr class='tdbg'>
+      <td colspan=2 align='center'>
+        <Input TYPE='button' value=' ȷ �� ' onCLICK='objectTag()'></td>
+    </tr>
+  </table>
+  </form>
+</body>
+</html>

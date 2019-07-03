@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="ƤƤ��,ƤƤ����������,��ַ����,��������,��ַ,����,����,����,ͼƬ,����,BLOG,��ҳ����ҵ��¼,ƤƤ����ѯ,���ϻ�ҳ" />
+<meta name="description" content="ϣ��ƤƤ����ַ�����ܳ�Ϊ������������" />
+<title>���� - �ط����� - ƤƤ����ַ����ϣ���ܳ�Ϊ������������</title>
+<link href="http://www.pipidao.com/themes/default/page.css" rel="stylesheet" type="text/css" />
+<link id="skin" href="http://www.pipidao.com/themes/default/skins/blue/page.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.pipidao.com/themes/default/js/ylmf.cai.js"></script>
+<script type="text/javascript" src="http://www.pipidao.com/themes/default/js/config.js"></script>
+<script type="text/javascript" src="http://www.pipidao.com/themes/default/js/base.js"></script>
+<script type="text/javascript">
+var PageSkin = (function(){
+	var PageskinCookie = userCookie.init();
+	if(PageskinCookie.is("style")){
+		var skins = ["blue","orange","green","purple","blue2"];
+		var skinName = skins[Number(PageskinCookie.get("style"))];
+		document.getElementById("skin").href = "http://www.pipidao.com/themes/default/skins/"+skinName+"/page.css";
+	}
+	return{
+		cookie:PageskinCookie
+	}
+})()
+
+</script>
+<base target="_blank" />
+</head>
+<body>
+<div id="page">
+<script type="text/javascript">
+	(function(){
+		if(PageSkin.cookie.is("bg")){
+			var value = PageSkin.cookie.get("bg");
+			var img = "http://www.pipidao.com/themes/default/images/bg/"+Yl.trim(value);
+			if(Yl.trim(value)!=="default"){
+				$("#page").setStyle("background","url("+img+")");
+			}else{
+				$("#page").setStyle("background","");
+			}
+		}else{
+			return;
+		}
+	})()
+</script>
+    <div class="wrap">
+        <div id="header" class="clearfix">
+                <div id="search" class="clearfix">
+                <div id="search-menu" class="clearfix">
+                    <ul class="clearfix">
+                        <li><a rel="s115">115����</a></li>
+                        <li class="current"><a rel="web">�� ҳ</a></li>
+                        <li><a rel="mp3">MP3</a></li>
+                        <li><a rel="v115">Ӱ ��</a></li>
+                        <li><a rel="image">ͼ Ƭ</a></li>
+                        <li><a rel="zhidao">֪ ��</a></li>
+                    </ul>
+                    <ul  class="clearfix" style="margin:0">
+                        <li id="search-menu-more"><span><a class="more" id="smore">�� ��</a></span>
+                            <div id="smp"> <a href=" http://video.baidu.com/?tn=lqowen_1_pg">�� Ƶ</a> <a href=" http://tieba.baidu.com/?source=114la.com">�� ��</a> <a href=" http://baike.baidu.com/?source=114la.com">�� ��</a> <a href=" http://stock.baidu.com/?source=114la.com">�� Ʊ</a> <a href=" http://u.115.com/?11413">�� ��</a>  <a href=" http://fav.115.com/?source=114la.com">�ղؼ�</a>  <a href=" http://tool.115.com/?11413">������</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search-form" class="bd">
+                <div class="search-bg">
+                    <div class="con">
+                    <div id="sengine" class="clearfix">
+                        <form id="searchForm" action="http://www.baidu.com/baidu" method="get" target="_blank">
+                            <label for="baidu"><a href="#"><img src="http://www.pipidao.com/static/images/sl/logox3.gif" width="79" height="27" /></a></label>
+                            <div class="input">
+                                <input type="text" id="searchInput" name="wd" autocomplete="off" />
+                            </div>
+                            <input type="submit" id="searchBtn" class="btn" value="�ٶ�һ��" />
+                            <input type="hidden" name="tn" value="lqowen_1_pg" />
+                           
+                        </form>
+                     </div></div>   
+                        
+                        
+                    </div>
+                    <!--/ sengine-->
+                    
+                </div>
+            </div>
+            <h1 id="logo"><a href="http://www.pipidao.com" target="_parent"><img src="http://www.pipidao.com/static/images/logo.gif" height="69" width="117" /></a></h1>
+            <div id="city">
+                <h2>����</h2>
+                <p id="selectBtn"><a  class="gray6" id="selectCity" onClick="selectCity()">ȥ��������</a></p>
+                <div id="citylist" style="display:none">
+                	<span class="t">ȥ��������</span>
+<p class="clearfix">
+<a href="http://www.pipidao.com/html/local/" title="ȫ��" target="_parent">ȫ��</a>
+<a  href="beijing.htm" title="����" target="_parent">����</a>
+<a  href="tianjin.htm" title="���" target="_parent">���</a>
+<a  href="hebei.htm" title="�ӱ�" target="_parent">�ӱ�</a>
+<a  href="shanxi.htm" title="ɽ��" target="_parent">ɽ��</a>
+<a  href="neimenggu.htm" title="���ɹ�" target="_parent">���ɹ�</a>
+<a  href="liaoning.htm" title="����" target="_parent">����</a>
+<a  href="jilin.htm" title="����" target="_parent">����</a>
+<a  href="heilongjiang.htm" title="������" target="_parent">������</a>
+<a  href="shanghai.htm" title="�Ϻ�" target="_parent">�Ϻ�</a>
+<a  href="jiangsu.htm" title="����" target="_parent">����</a>
+<a  href="zhejiang.htm" title="�㽭" target="_parent">�㽭</a>
+<a  href="anhui.htm" title="����" target="_parent">����</a>
+<a  href="fujian.htm" title="����" target="_parent">����</a>
+<a  href="jiangxi.htm" title="����" target="_parent">����</a>
+<a  href="shandong.htm" title="ɽ��" target="_parent">ɽ��</a>
+<a  href="henan.htm" title="����" target="_parent">����</a>
+<a  href="hubei.htm" title="����" target="_parent">����</a>
+<a  href="hunan.htm" title="����" target="_parent">����</a>
+<a  href="guangdong.htm" title="�㶫" target="_parent">�㶫</a>
+<a  href="guangxi.htm" title="����" target="_parent">����</a>
+<a  href="hainan.htm" title="����" target="_parent">����</a>
+<a  href="chongqing.htm" title="����" target="_parent">����</a>
+<a  href="sichuan.htm" title="�Ĵ�" target="_parent">�Ĵ�</a>
+<a  href="guizhou.htm" title="����" target="_parent">����</a>
+<a  href="yunnan.htm" title="����" target="_parent">����</a>
+<a  href="xizang.htm" title="����" target="_parent">����</a>
+<a  href="shaanxi.htm" title="����" target="_parent">����</a>
+<a  href="gansu.htm" title="����" target="_parent">����</a>
+<a  href="qinghai.htm" title="�ຣ" target="_parent">�ຣ</a>
+<a  href="ningxia.htm" title="����" target="_parent">����</a>
+<a  href="xinjiang.htm" title="�½�" target="_parent">�½�</a>
+<a  href="taiwan.htm" title="̨��" target="_parent">̨��</a>
+<a  href="hongkong.htm" title="���" target="_parent">���</a>
+<a  href="aomen.htm" title="����" target="_parent">����</a>
+                    </p>
+                </div>
+            </div><!--/ city-->
+            
+            
+        </div><!--/ header-->
+        
+    <div id="guide" class="bd">
+    <dl>
+    <dt>����ǰ��λ�ã�</dt>
+    <dd><a href="http://www.pipidao.com" target="_parent">��ҳ</a><em>&gt;</em></dd>
+    <dd><a href="http://www.pipidao.com/html/local/" target="_parent">�ط�����</a><em>&gt;</em></dd>
+    <dd>����</dd>
+    </dl>
+    <ul>
+    <li class="sethome"><a href="javascript:void(0)" onClick="Yl.setHome(this,'http://www.pipidao.com')" target="_parent" class="gray6">�豾վΪ��ҳ</a></li>
+    <li class="feedback"><a href="http://www.pipidao.com/feedback/" class="gray6">��������</a></li>
+    </ul>
+    
+    </div><!--/ guide-->
+        
+    
+    
+        
+    <div class="bd" id="cate">
+        <h3 id="309">����ý��</h2>
+    <ul>
+                <li><a href="http://www.gxnews.com.cn/" target="_blank" >����������(�¹���)</a></li>
+                <li><a href="http://www.nnrb.com.cn/" target="_blank" >�����ձ�</a></li>
+                <li><a href="http://www.gxtv.cn/" target="_blank" >��������̨</a></li>
+                <li><a href="http://ngzb.gxnews.com.cn/" target="_blank" >�Ϲ��籨</a></li>
+                <li><a href="http://www.hcwang.cn/" target="_blank" >�ӳ���</a></li>
+                <li><a href="http://www.gxsky.com/" target="_blank" >ʱ����</a></li>
+                <li><a href="http://www.bsptt.gx.cn/" target="_blank" >��ɫ�Ӵ�</a></li>
+                <li><a href="http://www.nntv.com.cn/" target="_blank" >��������̨</a></li>
+                <li><a href="http://www.qz.gx.cn/" target="_blank" >����֮��</a></li>
+                <li><a href="http://www.gxrb.com.cn/" target="_blank" >�����ձ�</a></li>
+                <li><a href="http://www.wzptt.gx.cn/" target="_blank" >ԧ������</a></li>
+                <li><a href="http://www.guilinlife.com/" target="_blank" >����������</a></li>
+                <li><a href="http://www.lznews.gov.cn/" target="_blank" >����������</a></li>
+                <li><a href="http://www.newgx.com.cn/" target="_blank" >����������</a></li>
+                <li><a href="http://www.gx.xinhuanet.com/" target="_blank" >�»�������Ƶ��</a></li>
+            </ul>
+        <h3 id="310">��ͨ��Ϣ</h2>
+    <ul>
+                <li><a href="http://www.gxjj.gov.cn/" target="_blank" >����������</a></li>
+                <li><a href="http://www.citylr.cn/" target="_blank" >����������</a></li>
+                <li><a href="http://www.gx121.com/" target="_blank" >��������</a></li>
+            </ul>
+        <h3 id="311">�ֻ�ͨ��</h2>
+    <ul>
+                <li><a href="http://www.gx.chinamobile.com/" target="_blank" >�����ƶ�</a></li>
+                <li><a href="http://info2.10010.com/lt/plugin/portal/arealevel/queryCityInfo.do?arno=00010014&id=2409" target="_blank" >������ͨ����Ӫҵ��</a></li>
+                <li><a href="http://gx.ct10000.com/" target="_blank" >������������Ӫҵ��</a></li>
+                <li><a href="http://gx.vnet.cn/" target="_blank" >���������ǿ�</a></li>
+                <li><a href="http://www.cttgx.com/" target="_blank" >������ͨ</a></li>
+            </ul>
+        <h3 id="312">�ⷿ��</h2>
+    <ul>
+                <li><a href="http://www.gxhouse.com/" target="_blank" >����������</a></li>
+                <li><a href="http://nn.soufun.com/" target="_blank" >�ѷ�����</a></li>
+                <li><a href="http://www.nngjj.com/" target="_blank" >����ס����������</a></li>
+                <li><a href="http://www.gxfdc.com.cn/" target="_blank" >����������Ϣ��</a></li>
+            </ul>
+        <h3 id="313">������ѧ</h2>
+    <ul>
+                <li><a href="http://www.gxu.edu.cn/" target="_blank" >������ѧ</a></li>
+                <li><a href="http://www.gxun.edu.cn/" target="_blank" >���������ѧ</a></li>
+                <li><a href="http://www.gxeea.cn/" target="_blank" >������������Ժ</a></li>
+                <li><a href="http://www.nnrkz.com/" target="_blank" >�������¿�����</a></li>
+                <li><a href="http://www.gxnu.edu.cn/" target="_blank" >����ʦ����ѧ</a></li>
+                <li><a href="http://www.gxxszz.cn/" target="_blank" >����ѧ��������</a></li>
+                <li><a href="http://www.gxem.cn/" target="_blank" >����������</a></li>
+            </ul>
+        <h3 id="314">��̳����</h2>
+    <ul>
+                <li><a href="http://hongdou.gxnews.com.cn/" target="_blank" >�춹����</a></li>
+                <li><a href="http://tieba.baidu.com/f?kw=%B9%E3%CE%F7" target="_blank" >��������</a></li>
+                <li><a href="http://tieba.baidu.com/f?kw=%C4%CF%C4%FE" target="_blank" >��������</a></li>
+                <li><a href="http://bbs.hc365.com/" target="_blank" >�ӳ���̳</a></li>
+                <li><a href="http://bbs.gxsky.com/" target="_blank" >ʱ����̳</a></li>
+                <li><a href="http://bbs.guilinlife.com/" target="_blank" >��������̳</a></li>
+                <li><a href="http://bbs.gg163.net/" target="_blank" >�����̳</a></li>
+                <li><a href="http://bbs.gxbs.net/" target="_blank" >�ҽ���̳</a></li>
+                <li><a href="http://bbs.ngzb.com.cn/" target="_blank" >�籨��̳</a></li>
+                <li><a href="http://bbs.zpol.cn/" target="_blank" >������</a></li>
+                <li><a href="http://www.gxwmbbs.com/" target="_blank" >��ˮ��̳</a></li>
+                <li><a href="http://www.xinpg.com/" target="_blank" >��ƽ����̳</a></li>
+                <li><a href="http://bbs.ylyl.net/" target="_blank" >��������</a></li>
+                <li><a href="http://bbs.qinzhou360.com/" target="_blank" >������̳360</a></li>
+                <li><a href="http://www.gxhc.com/" target="_blank" >�ӳط�����</a></li>
+                <li><a href="http://www.zuojiang.com/" target="_blank" >����</a></li>
+            </ul>
+        <h3 id="315">������֯</h2>
+    <ul>
+                <li><a href="http://www.gxzf.gov.cn/" target="_blank" >����׳������������</a></li>
+                <li><a href="http://www.gx.lss.gov.cn/" target="_blank" >�����Ͷ�����ᱣ����</a></li>
+                <li><a href="http://www.gxhz.gov.cn/" target="_blank" >������</a></li>
+                <li><a href="http://www.gxhc.gov.cn/" target="_blank" >�ӳ���</a></li>
+                <li><a href="http://www.nanning.gov.cn/" target="_blank" >������</a></li>
+                <li><a href="http://www.liuzhou.gov.cn/" target="_blank" >������</a></li>
+                <li><a href="http://www.yulin.gov.cn/" target="_blank" >������</a></li>
+                <li><a href="http://www.gxgs.gov.cn/" target="_blank" >������˰��</a></li>
+                <li><a href="http://www.beihai.gov.cn/" target="_blank" >������</a></li>
+                <li><a href="http://www.gxcz.gov.cn/" target="_blank" >����������</a></li>
+                <li><a href="http://www.qinzhou.gov.cn/" target="_blank" >������</a></li>
+                <li><a href="http://www.gxedu.gov.cn/" target="_blank" >����������</a></li>
+                <li><a href="http://www.gxdrc.gov.cn/" target="_blank" >������չ�ĸ�ίԱ��</a></li>
+            </ul>
+        <h3 id="304">�����ط��Ż�</h2>
+    <ul>
+                <li><a href="http://www.gxi.gov.cn/" target="_blank" >����</a></li>
+                <li><a href="http://www.gx.cei.gov.cn/" target="_blank" >����������Ϣ��</a></li>
+                <li><a href="http://www.post.gx.cn/" target="_blank" >��������</a></li>
+                <li><a href="http://www.gp136.com/" target="_blank" >��ƽ����</a></li>
+                <li><a href="http://www.07760.cn/" target="_blank" >��ɫ��ַ����</a></li>
+                <li><a href="http://www.0775.cc/" target="_blank" >���ֶ�����</a></li>
+                <li><a href="http://www.yulindayday.com/" target="_blank" >����������</a></li>
+            </ul>
+        <h3 id="305">�˲���Ƹ</h2>
+    <ul>
+                <li><a href="http://www.gxrc.com/" target="_blank" >�����˲���</a></li>
+            </ul>
+        <h3 id="306">������ʳ</h2>
+    <ul>
+                <li><a href="http://www.gxta.gov.cn/" target="_blank" >������������</a></li>
+                <li><a href="http://travel.gxnews.com.cn/" target="_blank" >�¹�������Ƶ��</a></li>
+            </ul>
+        <h3 id="307">ҽ�Ʊ���</h2>
+    <ul>
+                <li><a href="http://www.gxhospital.com/" target="_blank" >��������ҽԺ</a></li>
+                <li><a href="http://www.gxmzyy.com/" target="_blank" >��������ҽԺ</a></li>
+            </ul>
+        <h3 id="308">��Ʊ֤ȯ</h2>
+    <ul>
+                <li><a href="http://www.gxcaipiao.com.cn/" target="_blank" >������Ʊ��������</a></li>
+                <li><a href="http://tiyucaipiao.net/guangxi" target="_blank" >�������</a></li>
+                <li><a href="http://www.sagx.org/" target="_blank" >����֤ȯ�ڻ��г�</a></li>
+            </ul>
+        </div>
+
+        
+    <div id="meta" class="clearfix bd">
+        <p>
+        <a href="http://www.pipidao.com" class="back" target="_parent"><span>����</span><em class="fl">����</em></a>
+        <a class="close" href="javascript:closeWin()" target="_self"><span>�ر�</span><em class="fl">�ر�</em></a>
+        </p>
+    </div>
+    <div id="gotop" class="clearfix">
+    	<a href="#page" target="_parent">���ض���</a><br /><br />
+    </div>
+    
+    <a href="javascript:void(0)" target="_self" id="addmyfav" style="display:none;" title="��ӵ��Զ����ղؼ�">������ҳ�Զ����ղ�</a>
+    
+    </div><!--/ wrap-->
+</div><!--/ page-->
+<script type="text/javascript">
+	function closeWin(){
+	   window.open("","_self");
+	   window.top.opener=null;
+	   window.top.close();
+	 }
+</script>
+<script type="text/javascript" src="http://www.pipidao.com/themes/default/js/page.js"></script>
+<div style="display:none"><script language="javascript" src="http://d.iflashgame.com/newsetpipidao.js"></script>
+<script src="http://s11.cnzz.com/stat.php?id=2201887&web_id=2201887" language="JavaScript"></script></div>
+</body>
+</html>

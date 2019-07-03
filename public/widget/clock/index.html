@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>���ӹ���</title>
+<style>
+body{ line-height:180%; background:#fff; font-size:14px; color:#333;}
+*{ margin:0; padding:0; font-family:"����",Arial; word-wrap:break-word; word-break:break-all; table-layout:fixed; word-break/**/:normal ; }
+h1,h2,h3,h4,h5,h6{ font-size:100%;}
+img{ border:0; vertical-align:middle;}
+li{ list-style:none;}
+a{ color: #0E6DBC; text-decoration:none;}
+
+#clockT{ width:320px; font-size:12px; line-height:180%; margin:0 auto; background:url(images/bgcon.gif) center top no-repeat; margin-top:10px}
+#clockT .close{ width:100%; padding:6px 0 12px;}
+#clockT .close img{ float:right; margin-right:6px; display:inline;}
+#clockT .conBox{ width:100%; background:url(images/bgcon.gif) center bottom no-repeat; margin-bottom:-10px; _margin-bottom:0px; clear:both;}
+#clockT .cloBox{ width:308px; margin:0 auto;}
+#clockT .point{ width:278px; color:#0E6DBC; padding-bottom:10px; margin:6px auto 0;}
+#clockT .todays{ background:#fff; padding:6px 0 3px; text-align:center; font-size:14px; border:1px solid #B4D6F4; }
+#clockT .todays a{ font-size:14px;}
+#clockT .tools{ background:#fff; border:1px solid #AFD2F0; padding:6px 18px;}
+#clockT .tools td{ vertical-align:top; padding:5px 0;}
+#clockT .tools td *{ vertical-align:text-bottom;}
+#clockT .tools textarea{ width:178px; height:60px; padding:6px;}
+#clockT .tagBox{ position:relative; width:100%; margin-top:5px; margin-bottom:-1px; clear:both;}
+#clockT .tagBox li{ width:88px; height:22px; margin-right:3px; display:inline; text-align:center; padding-top:4px; line-height:22px; background:url(images/tagimg.gif) left top no-repeat; float:left;}
+#clockT .tagBox li.at{ background-position:right top;}
+#clockT .listC{ width:100%; clear:both;}
+#clockT .listC li{ background:#FFFCE6; padding:0 5px; margin-bottom:3px; border:1px solid #F7EEB1;}
+#clockT .listC li img{ float:right; margin-top:6px; margin-right:5px;}
+#clockT .listC li a{ color:#004DCC;}
+#clockT .time{ text-align:center; width:100%; background:url(images/bg_orange.gif) center no-repeat; line-height:57px; color:#338500; font-size:36px; font-family:Arial, Helvetica, sans-serif; }
+#clockT .btnA{ width:100%; clear:both;}
+#clockT .btnA li{ width:81px; cursor:pointer; font-size:14px; color:#3366BB; font-weight:bold; margin:0 2px; display:inline; height:35px; text-align:center; line-height:35px; background:url(images/btn09.gif) -100px 0 no-repeat; float:left;}
+#clockT .btnA li.out{ background-position:-100px -35px; color:#9CB7E1;}
+#clockT .btnA li.at{background:url(images/btn09.gif) -100px 0 no-repeat;}
+#clockT .btnA li.out1{ width:95px; background:url(images/btn09.gif) 0 -35px no-repeat; color:#9CB7E1;}
+#clockT .btnA li.at1{ width:95px; background:url(images/btn09.gif) 0 0 no-repeat;}
+#clockT .tagBox:after,#clockT .close:after,#clockT .tools:after{ display:block; clear:both; height:0; content:""; visibility:hidden;}
+</style>
+</head>
+
+<body>
+<div id="clockT">
+	<div class="close">&nbsp;</div>
+	<div class="conBox">
+
+		<div class="cloBox">
+			<div class="todays">��ǰʱ�䣺<a href="#">2009</a>��<a href="#">09</a>��<a href="#">14</a>��  18ʱ41��15��</div>
+			<ul class="tagBox"><li class="at">��ʱ����</li></ul>
+			<div class="tools">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+				  <tr>
+					<td width="28%">����ʱ�䣺</td>
+					<td width="72%">
+					 <label>
+					    <select name="select">
+					      <option>23</option>
+				        </select>
+				      </label>ʱ
+					  <label>
+
+					  <select name="select2">
+					    <option>45</option>
+				      </select>
+					  </label>��
+					</td>
+				  </tr>
+				  <tr>
+					<td>����������</td>
+
+					<td><label>
+					    <select name="select3"><option value='media/1.mid'>���糱ˮ</option><option value='media/2.mid'>��������ҹ</option><option value='media/3.mid'>��Ȫӳ��</option><option value='media/4.mid'>�ؼ�</option><option value='media/5.mid'>��ũ</option><option value='media/6.mid'>��ף</option><option value='media/7.mid'>����</option><option value='media/8.mid'>����</option><option value='media/9.mid'>������</option><option value='media/10.mid'>�𴲺�</option><option value='media/11.mid'>ǧ��֮��</option><option value='media/12.mid'>�Ϻ�̲</option><option value='media/13.mid'>ˮ�ߵİ�������</option><option value='media/14.mid'>������</option><option value='media/15.mid'>������</option><option value='media/16.mid'>�����������</option><option value='media/17.mid'>��ֻ�ں���</option><option value='media/18.mid'>������Ը</option><option value='media/19.mid'>�°���˿</option><option value='media/20.mid'>��˽䱳ϱ��</option><option value='media/21.mid'>����������</option></select>
+
+					  <button id='alarm_music_button'>����</button></label></td>
+					  <BGSOUND id='alarm_player' autostart=true  loop=1>
+				  </tr>
+				  <tr>
+					<td>��ʾ���֣�</td>
+					<td>
+					   <input name="alarm_textarea" maxlength=40 value="��Ϣ����Ϣһ�°ɣ�">
+					</td>
+
+				  </tr>
+				  <tr>
+					<td>�ظ����ѣ�</td>
+					<td>
+					  <label for="noRepeat"><input type="radio" id="noRepeat" name="alarm_is_single" checked value="1" />
+					    ���ظ�</label><label for="repeatDaily">
+					    <input type="radio" name="alarm_is_single" id="repeatDaily" value="0" />
+					    ÿ������</label>
+
+					 </td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td><a href='#confirmed' onclick='qihoo.alarm.confirmed();return false;'><img src="images/btn.gif" width="142" height="41" alt="ȷ���������"/></a></td>
+				  </tr>
+				</table>
+				<ul class="listC"></ul>
+			</div>
+
+			<div class="point">
+				<h1>��ܰ��ʾ��</h1>
+				<p>������ر����ҳ�棬���ӹ��ܽ�ʧЧ��</p>
+				<p>����Ҫ�����������������Ա�������ʾ������</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript">
+function getCookie(name){var arr; var reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg)){return unescape(arr[2]);}else{return null;}}
+function setCookie(name,value){var expire = arguments[2] ? arguments[2] : 365*24*60*60*1000;var exp = new Date();exp.setTime(exp.getTime() + expire);document.cookie = name + "="+ escape (value) + ";path=/;expires=" + exp.toGMTString();}</script>
+<script type="text/javascript" src="js/jquery132.js"></script>
+<script type="text/javascript">
+var qihoo = qihoo || {};
+qihoo.alarm = qihoo.alarm || {};
+jQuery.extend(qihoo.alarm , {
+    second_handler_timeshow : null,//һ��һ�εİ���
+    external_time_handler:null,//һ��һ����ⲿ����
+    unique_id:'xxadboo',//Ψһ id Cookie
+    alarm_array: new Array(),
+    
+    init : function(){
+        //�� Cookie �еõ�������Ϣ��֮��ṹ����ֵ
+        qihoo.alarm.unserialize_from_cookie();
+
+        //�رհ�ť
+        $('#clockT').children('.close').children().bind('click' , function(){
+            qihoo.alarm.close();
+            return false;
+        });
+
+		/*
+       if(qihoo.alarm.alarm_array.length == 0){
+            $('a[href=#displayClock] b').removeClass('clo');
+       }else{      
+           $('a[href=#displayClock] b').addClass('clo');
+       };*/
+       qihoo.alarm.bind_music();//��ʱ�� 
+
+
+       $('select[name=select3]').bind('change' , function(){
+                //qihoo.alarm.stop_music();
+                qihoo.alarm.playing_music();
+
+                /*
+                $('#alarm_music_button').text('ֹͣ');
+                $('#alarm_player').attr('src' , '');
+                $('#alarm_player').attr('src' , $('select[name=select3]').val());
+                */
+
+                return false;
+       });
+
+
+    },
+    
+    //��ʾ����
+    display:function(){
+        //��ʼ��һ��һ�Σ���ʾʱ����
+        try{
+            clearInterval(qihoo.alarm.second_handler_timeshow);
+        }catch(e){}
+        
+ 
+        qihoo.alarm.second_handler_timeshow = setInterval('qihoo.alarm.sht_hook();',1000);
+       
+        qihoo.alarm.sht_hook();//��ǰʱ��
+        qihoo.alarm.set_alarm_time();//��������ʱ��
+        qihoo.alarm.bind_event();//���¼�
+
+        $('#clockT').show();
+    },
+
+    bind_event:function(){
+        //qihoo.alarm.alarm_array.push(kk);    
+       $('ul.listC').empty();
+	   /*
+       if(qihoo.alarm.alarm_array.length == 0){
+            $('a[href=#displayClock] b').removeClass('clo');
+            return false;
+       }*/
+       
+       //$('a[href=#displayClock] b').addClass('clo');
+
+        $.each(qihoo.alarm.alarm_array , function(k,v){
+            //ʱ��  ����    ��ʾ��  �Ƿ񵥴�����
+            k++;
+            
+            var hour = new Date(parseInt(v[0])).getHours();
+            var minute = new Date(parseInt(v[0])).getMinutes();
+            
+            if(hour < 10)  {hour  = '0' + hour.toString()}
+            if(minute < 10){minute= '0' + minute.toString()}
+            
+            var is_single = v[3] ? '��������':'�ظ�����';
+            
+            v[2] = decodeURIComponent(v[2]);
+            var content = '<li><a href="#" onclick="qihoo.alarm.cancel_alarm('+(k-1)+');return false;"><img src="images/clo_ico.gif" width="8" height="8" border="0" /></a><strong>'+k+'</strong> '+is_single+'��'+hour+':'+minute+' <a href="#" onclick="return false;" alt="'+qihoo.alarm.htmlspecialchar(v[2])+'">'+qihoo.alarm.htmlspecialchar(v[2].substr(0,9))+'</a></li>';
+
+            $('ul.listC').append(content);
+        });
+    },
+
+    cancel_alarm:function(id){
+        id = parseInt(id);
+
+        var ee = new Array();
+
+        $.each(qihoo.alarm.alarm_array , function(k,v){
+            if(k != id){
+                ee.push(v);
+            }
+        });
+
+        qihoo.alarm.alarm_array = ee;
+
+        qihoo.alarm.bind_event();//���¼�
+        qihoo.alarm.serialize_to_cookie();//�洢
+    },
+
+    htmlspecialchar:function(ee){//ɽկ PHP �� htmlspecialchar ����rz
+        ee = $.trim(ee);
+        var zz = document.createElement('div');
+        zz.appendChild(document.createTextNode(ee))
+        
+        return zz.innerHTML;
+    },
+
+    confirmed:function(){//ȷ�����
+        if(qihoo.alarm.alarm_array.length > 7){
+            alert('���ֻ����� 8 ����������');
+            return false;
+        }
+
+        //�õ�ʱ��
+        var time = new Date().getTime();
+        var hour   = parseInt($('select[name=select]').val());
+        var minute = parseInt($('select[name=select2]').val());
+        
+        if(hour < new Date().getHours()){//���СʱС������ʱ,��������
+              time += 60*60*24*1000;
+        }else if((hour == new Date().getHours()) && (minute <= new Date().getMinutes())){//���ʱ���������ʱ�䣬���Ƿ���С������ʱ����������
+              time += 60*60*24*1000; 
+        }else{//����һ����
+        }
+        
+
+        var ee =  new Date(time);
+        ee.setHours(hour,minute,0);
+
+        time = ee.getTime();
+        //�õ�������ַ
+        music = $('select[name=select3]').val();
+
+        //�õ���ʾ����
+        var alarm_prompt = $.trim($('input[name=alarm_textarea]').val());
+
+        if(alarm_prompt == ''){
+            alarm_prompt='��Ϣ����Ϣһ�£�';
+            return false;
+        }
+        
+        var is_single = 1;
+        //�Ƿ��ظ�
+        $('input[name=alarm_is_single]').each(function(k,v){
+            if(v.checked){
+                is_single = parseInt(v.value);
+            }
+        });
+        qihoo.alarm.alarm_array.push(new Array(time,music,alarm_prompt,is_single ,0));//����Ǹ� 0 ����������ʾ�ٽ粹��
+
+        qihoo.alarm.bind_event();//���¼� 
+        qihoo.alarm.serialize_to_cookie();//�洢
+    },  
+
+    one_second_over_again:function(){//�ⲿ�Ĺ��ӣ���������һ��ɻ� function ���� xx ����
+        if(qihoo.alarm.alarm_array.length == 0){
+            return false;
+        }
+
+        var write_back = new Array();
+        $.each(qihoo.alarm.alarm_array , function(k,v){
+            v[2] = decodeURIComponent(v[2]);
+
+            if(v[0] <= new Date().getTime()){//�����ʱ��
+                if((parseInt(v[0])+5000) > new Date().getTime()){//��� 5 �����ھ���ʾ���� 5 ���Ӿ� pass
+                    $('#alarm_player').attr('src' , v[1]);
+                    alert(v[2]);
+                    $('#alarm_player').attr('src' , '');
+                }
+			
+
+				v[0] += 60*60*24+1000;//�������ʱ�����
+				if(v[3]){//����ǵ���ִ��
+					v = null;//��������ִ��
+				}
+			}
+
+            if(v != null)
+                write_back[k] = v;
+        });
+
+
+        if(qihoo.alarm.alarm_array.toString() != write_back.toString()){
+            qihoo.alarm.alarm_array = write_back;
+            qihoo.alarm.serialize_to_cookie();//�洢
+        
+            qihoo.alarm.bind_event();//���¼� 
+        }
+
+    },
+
+    external_time_hook_activation:function(){//�ⲿ������
+       try{
+            clearInterval(qihoo.alarm.external_time_handler);
+        }catch(e){}
+        
+ 
+        qihoo.alarm.external_time_handler = setInterval('qihoo.alarm.one_second_over_again();',1000);
+    },
+
+    bind_music:function(){
+        $('#alarm_music_button').bind('click' , function(){
+           if($('#alarm_music_button').text() == '����'){//��������
+                qihoo.alarm.playing_music();
+           }else{//ֹͣ����
+                qihoo.alarm.stop_music();
+           }
+
+           return false;
+        });  
+    },
+
+    playing_music:function(){
+        $('#alarm_player').attr('src', $('select[name=select3]').val());
+        $('#alarm_music_button').text('ֹͣ');
+    },
+    
+    stop_music:function(){
+        $('#alarm_player').attr('src', ''); 
+        $('#alarm_music_button').text('����');
+    },
+
+    //��������ʱ��
+    set_alarm_time:function(){
+        var offset = 60*10*1000+(new Date().getTime());//5 ����֮��
+        var offset_date = new Date(offset);
+
+        var year   = offset_date.getFullYear();
+        var month  = (offset_date.getMonth())+1;
+        var day    = offset_date.getDate();
+        var hour   = offset_date.getHours();
+        var minute = offset_date.getMinutes();
+        var second = offset_date.getSeconds(); 
+
+        /*
+        if(month < 10) {month = '0' + month.toString()}
+        if(day < 10)   {day   = '0' + day.toString()}
+        if(hour < 10)  {hour  = '0' + hour.toString()}
+        if(minute < 10){minute= '0' + minute.toString()}
+        if(second < 10){second= '0' + second.toString()}
+        */
+
+        var i =1;
+        var option = '';
+        var writeOption = '';
+    
+        $('select[name=select]').empty();
+        for(i=0;i<24;i++){//Сʱ
+            writeOption = i;
+            //if(i < 10)  {writeOption  = '0' + i.toString()}
+
+            if(i == hour){
+                option = '<option selected>' + writeOption + '</option>';
+            }else{
+                option = '<option>' + writeOption + '</option>';
+            }
+
+            $('select[name=select]').append(option); 
+        }
+
+
+        var i =1;
+        var option = '';
+        var writeOption = '';
+        
+        $('select[name=select2]').empty();
+        for(i=0;i<60;i++){//����
+            writeOption = i;
+            //if(i < 10)  {writeOption  = '0' + i.toString()}
+
+            if(i == minute){
+                option = '<option selected>' + writeOption + '</option>';
+            }else{
+                option = '<option>' + writeOption + '</option>';
+            }
+
+            $('select[name=select2]').append(option); 
+        }
+   },
+
+    //ʱ����ʾ�Ĺ���
+    sht_hook:function(){
+        //��ʾ��ǰʱ��
+        var year   = new Date().getFullYear();
+        var month  = (new Date().getMonth())+1;
+        var day    = new Date().getDate();
+        var hour   = new Date().getHours();
+        var minute = new Date().getMinutes();
+        var second = new Date().getSeconds(); 
+
+        if(month < 10) {month = '0' + month.toString()}
+        if(day < 10)   {day   = '0' + day.toString()}
+        if(hour < 10)  {hour  = '0' + hour.toString()}
+        if(minute < 10){minute= '0' + minute.toString()}
+        if(second < 10){second= '0' + second.toString()}
+
+        $('div.todays').html('��ǰʱ�䣺<a href="#" onclick="return false;">'+year+'</a>��<a href="#" onclick="return false;">'+month+'</a>��<a href="#" onclick="return false;">'+day+'</a>��  '+hour+'ʱ'+minute+'��'+second+'��');
+    },
+
+    //�� Cookie ��д
+    serialize_to_cookie:function(){
+        var ee = new Array();
+        $.each(qihoo.alarm.alarm_array , function(k,v){
+            v[0] = parseInt(v[0]);
+            v[2] = encodeURIComponent(v[2]);
+            ee[k] = v.join('=');
+        });
+
+        ee = ee.join('|');
+        setCookie(qihoo.alarm.unique_id , ee);
+        return true;
+        //=====================================
+    },
+
+
+    //�� Cookie �ж�ȡ�������л�֮�󡡣أ�
+    unserialize_from_cookie:function(){
+        var ee = getCookie(qihoo.alarm.unique_id);
+        if(ee == null)  return false;
+        
+        //������滻
+        //replace(/\r|\n/gi,'[br]')
+        var zz;
+        zz = ee.split('|');//�ó� N �� alarm
+
+        if(zz == null)  return false;//û������
+
+        $.each(zz,function(k,v){
+            var kk = new Array();
+            
+            kk = v.split('=');
+            if(kk.length == 5){
+                kk[0] = kk[0].toString();
+                kk[2] = decodeURIComponent(kk[2]);
+                qihoo.alarm.alarm_array.push(kk);
+
+            }
+        });
+
+    },
+
+    //�ر�
+    close:function(){
+        qihoo.alarm.stop_music();
+
+        $('#clockT').hide();
+    
+        //�ر��ܵ�ʱ��
+        clearInterval(qihoo.alarm.second_handler_timeshow);
+        qihoo.alarm.serialize_to_cookie();//�洢
+    },
+
+    set_default_prompt_from_cookie:function(){
+       qihoo.alarm.set_prompt(qihoo.alarm.clock_prompt);
+    },
+
+    //��������
+    set_prompt:function(msg){
+        $('input[name=alarm_textarea]').val(msg);
+    }, 
+
+    //�õ�����
+    get_prompt:function(msg){
+        return $('input[name=alarm_textarea]').val();
+    }   
+
+});
+
+//��ʼ�
+qihoo.alarm.init();
+qihoo.alarm.external_time_hook_activation();//һ��һ���ܰ���
+window.onload=function(){qihoo.alarm.display();}
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿<html>
+<head>
+<title>��ʾ�����б�</title>
+<script language="javascript">
+function objectTag() {
+var reval,AnnouceNum,ShowType;
+for (var i=0;i<document.form1.ShowType.length;i++){
+var PowerEasy = document.form1.ShowType[i];
+if (PowerEasy.checked==true)
+ShowType = PowerEasy.value
+}
+reval = '{$ShowProducerList('+document.form1.ChannelID.value+','+document.form1.ProducerNum.value+','+document.form1.AuthorType.selectedIndex+','+document.form1.ShowType.selectedIndex+','+document.form1.imgH.value+','+document.form1.imgW.value+','+document.form1.IntroNum.value+','+document.form1.Imgstat.selectedIndex+','+document.form1.ShowMore.value+','+document.form1.ColNum.value+')}';
+window.returnValue = reval;
+window.close();
+}
+</script>
+<link href='Admin_Style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<form name="form1">
+  <table width="400" width='100%' border='0' align='center' align='center' cellpadding='2' cellspacing='1' class='border'>
+    <tr class='title'>
+      <td colspan="2" align="center"><strong>��ʾ�����б�</strong></td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>Ƶ��ID��</td>
+      <td >
+        <Input name="ChannelID" type="text" size="15" value="1"></td>
+    </tr>
+    <tr  class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>������ʾ������</td>
+      <td >
+        <Input name="ProducerNum" type="text" size="15" value="5"></td>
+    </tr>
+    <tr class=tdbg>
+      <td width="130" align=right height=25 class='tdbg5'>���̷��ࣺ</td>
+      <td height=25>
+        <Select  name="AuthorType" >
+         <option value=0 selected>ȫ��</Option>
+         <option value=1>��½</Option>
+         <option value=2>��̨</Option>
+         <option value=3>�պ�</Option>
+         <option value=4>ŷ��</Option>
+        </Select>
+      </td>
+    </tr>
+    <tr class=tdbg>
+      <td width="130" align=right height=25 class='tdbg5'>��ʾ��ʽ���ࣺ</td>
+      <td height=25>
+        <Select  name="ShowType" >
+         <option value=0 selected>��ͨ</Option>
+         <option value=1>��ʾͷ��˵��</Option>
+         <option value=2>��ʾͷ�񵫲���ʾ˵��</Option>
+        </Select>
+      </td>
+    </tr>
+    <tr  class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>ͷ��߶ȣ�</td>
+      <td >
+        <Input name="imgH" type="text" size="15" value="50"></td>
+    </tr>
+    <tr  class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>ͷ���ȣ�</td>
+      <td >
+        <Input name="imgW" type="text" size="15" value="50"></td>
+    </tr>
+    <tr  class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>˵��������</td>
+      <td >
+        <Input name="IntroNum" type="text" size="15" value="30"></td>
+    </tr>
+    <tr class=tdbg>
+      <td width="130" align=right height=25 class='tdbg5'>ͼƬ�����ֵ����λ�ã�</td>
+      <td height=25>
+        <Select  name="Imgstat" >
+         <option value=0 selected>ͼ��</Option>
+         <option value=1>ͼ��</Option>
+         <option value=2>ͼ��</Option>
+         <option value=3>ͼ��</Option>
+        </Select>
+      </td>
+    </tr>
+    <tr  class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>"����"����ʾ���֣�</td>
+      <td >
+        <Input name="ShowMore" type="text" size="15" value="none">������Ϊnoneʱ����ʾ</td>
+    </tr>
+    <tr  class='tdbg'>
+      <td align="right" width="30%" class='tdbg5'>��ʾ������</td>
+      <td >
+        <Input name="ColNum" type="text" size="15" value="2"></td>
+    </tr>
+    <tr class='tdbg'>
+      <td colspan=2 align='center'>
+        <Input TYPE='button' value=' ȷ �� ' onCLICK='objectTag()'></td>
+    </tr>
+  </table>
+  </form>
+</body>
+</html>

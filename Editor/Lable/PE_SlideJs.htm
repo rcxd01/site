@@ -1,0 +1,70 @@
+﻿<html>
+<head>
+<title>ȫվͨ�ûõ�Ƭ��ǩ</title>
+<script language="javascript">
+function objectTag() {
+    var reval;
+    reval = '{$SlidePicJs('+document.form1.PicModuleType.value+','+document.form1.Elite.value+','+document.form1.Ontop.value+','+document.form1.Hits.value+','+document.form1.PicNum.value+','+document.form1.PicChannelID.value+','+document.form1.PicClassID.value+','+document.form1.TitleLength.value+','+document.form1.PicWid.value+','+document.form1.PicHei.value+','+document.form1.TextHei.value+')}';  
+    window.returnValue = reval;
+    window.close();
+}
+</script>
+<link href='Admin_Style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<form name="form1">
+<table  Width="100%" border='0' align='center'cellspacing='1' class='border'>
+  <tr class='title' align="center">
+    <td colspan="2" height='22'><b>ȫվͨ�ûõ�Ƭ��ǩ��ǩ����</b></td>
+  </tr>
+  <tr class='tdbg'>
+    <td align="right" class='tdbg5' >Ƶ�����ͣ�<br>����Ƶ��--1  ���Ƶ��--2<br>ͼƬƵ��--3  �̳�Ƶ��--5</td>
+    <td ><input name="PicModuleType" type="text" size="6" value="1"></td>
+  </tr>
+   <tr class='tdbg'>
+    <td align="right" class='tdbg5' >�Ƿ��Ƽ�����--1  ��--0</td>
+    <td ><input name="Elite" type="text" size="6" value="0"></td>
+  </tr>
+   <tr class='tdbg'>
+    <td align="right" class='tdbg5' >�Ƿ�̶�����--1  ��--0</td>
+    <td ><input name="Ontop" type="text" size="6" value="0"></td>
+  </tr>
+   <tr class='tdbg'>
+    <td align="right" class='tdbg5' >�������0--������<br>��������--��С���������<br> </td>
+    <td ><input name="Hits" type="text" size="6" value="0"></td>
+  </tr>
+  <tr class='tdbg'>
+    <td align="right" class='tdbg5'>����ͼƬ����(2-9)��</td>
+    <td ><input name="PicNum" type="text" size="6" value="5"></td>
+  </tr>
+    <tr class='tdbg'>
+    <td align="right" class='tdbg5' >Ƶ��ID(0Ϊ����ͬ��Ƶ��,��ͬƵ����|���)��</td>
+    <td ><input name="PicChannelID" type="text" size="6" value="0"></td>
+  </tr>
+     <tr class='tdbg'>
+    <td align="right" class='tdbg5' >��ĿID(0Ϊ������Ŀ,��ͬ��Ŀ��|���)��</td>
+    <td ><input name="PicClassID" type="text" size="6" value="0"></td>
+  </tr> 
+  <tr class='tdbg'>
+    <td align="right" class='tdbg5'>����������</td>
+    <td ><input name="TitleLength" type="text" size="6" value="40"></td>
+  </tr>
+    <tr class='tdbg'>
+    <td align="right" class='tdbg5'>�õ�Ƭ��ȣ�</td>
+    <td ><input name="PicWid" type="text" size="6" value="300"></td>
+  </tr>
+    <tr class='tdbg'>
+    <td align="right" class='tdbg5' >�õ�Ƭ�߶ȣ�</td>
+    <td ><input name="PicHei" type="text" size="6" value="200"></td>
+  </tr>
+  <tr class='tdbg'>
+    <td align="right" class='tdbg5'>���ָ߶ȣ�</td>
+    <td ><input name="TextHei" type="text" size="6" value="20"></td>
+  </tr>
+  <tr class='tdbg'>
+    <td colspan=2 align='center'><input TYPE='button' value=' ȷ �� ' onCLICK='objectTag()'> </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

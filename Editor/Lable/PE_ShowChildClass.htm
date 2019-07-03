@@ -1,0 +1,74 @@
+﻿<html>
+<head>
+<title>��ʾ��ǰ��Ŀ����һ������Ŀ</title>
+<script language="javascript">
+function objectTag() {
+var reval��OpenType;
+
+for (var i=0;i<document.form1.OpenType.length;i++){
+var PowerEasy = document.form1.OpenType[i];
+if (PowerEasy.checked==true)
+    OpenType = PowerEasy.value
+}
+reval = '{$ShowChildClass('+document.form1.theClassID.value+','+document.form1.ClassNum.value+','+document.form1.ShowPropertyType.value+','+OpenType+','+document.form1.Cols.value+','+document.form1.ShowChildNum.value+')}';
+window.returnValue = reval;
+window.close();
+}
+//=================================================
+//��������IsDigit()
+//��  �ã�����Ϊ����
+//=================================================
+function IsDigit()
+{
+  return ((event.keyCode >= 48) && (event.keyCode <= 57));
+}
+//-->
+</script>
+<link href='Admin_Style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<form name="form1">
+  <table width="320" width='100%' border='0' align='center' align='center' cellpadding='2' cellspacing='1' class='border'>
+    <tr class='title'>
+      <td colspan="2" align="center"><strong>��ʾ��ǰ��Ŀ����һ������Ŀ��</strong></td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" class='tdbg5'>��ĿID��</td>
+      <td>
+        <Input name="theClassID" type="text" size="10" value="0" ONKEYPRESS="javascript:event.returnValue=IsDigit()">0Ϊ����Ŀ</td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" class='tdbg5'>��Ŀ����</td>
+      <td>
+        <Input name="ClassNum" type="text" size="10" value="0" ONKEYPRESS="javascript:event.returnValue=IsDigit()">�����0����ֻ��ѯǰ������Ŀ</td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" class='tdbg5'>СͼƬ��</td>
+      <td>
+        <Input name="ShowPropertyType" type="text" size="20" value="0"><br><font color='blue'>��ʾǰ��Сͼ�꣬0Ϊ����ʾ��1Ϊ���ţ�����ΪСͼƬ��/images/Special_List*.gif</font></td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" width="100" class='tdbg5'>�򿪷�ʽ��</td>
+      <td>
+        <Input type="radio" name="OpenType" value="0" checked> ��ԭ���ڴ�
+        <Input type="radio" name="OpenType" value="1" > ���´��ڴ�
+      </td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" class='tdbg5'>ÿ�е�������</td>
+      <td>
+        <Input name="Cols" type="text" size="20" value="5">�����������ͻ���</td>
+    </tr>
+    <tr class='tdbg'>
+      <td align="right" class='tdbg5'>��ʾ����Ŀ������</td>
+      <td>
+        <Input name="ShowChildNum" type="text" size="20" value="5">������Ŀʱ����ʾ</td>
+    </tr>
+    <tr class='tdbg'>
+      <td colspan=2 align='center'>
+        <Input TYPE='button' value=' ȷ �� ' onCLICK='objectTag()'></td>
+    </tr>
+  </table>
+  </form>
+</body>
+</html>

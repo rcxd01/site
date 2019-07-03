@@ -1,0 +1,73 @@
+﻿<html>
+<head>
+<title>��ʾ�ó��̻�Ʒ����ӵ�е���Ʒ�б�</title>
+<script language="javascript">
+function objectTag() {
+    var strJS,iType;
+	switch(document.form1.iType.selectedIndex)
+    {
+      case 0: iType='1'; break;
+      case 1: iType='2'; break;
+	  case 2: iType='3'; break;
+	}
+	strJS = '{$ShowProductList(';
+	strJS+=iType;
+	strJS+=","+document.form1.IsShowTime.checked;
+	strJS+=","+document.form1.IsShowLink.checked;	
+	strJS+=","+document.form1.iNum.value;	
+	strJS+=","+document.form1.iorder.selectedIndex;
+	strJS+=","+document.form1.iWidth.value;
+	strJS+=","+document.form1.iHeight.value;
+	strJS+=')}';
+	window.returnValue = strJS;
+	window.close();
+}
+</script>
+<link href='Admin_Style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<form name="form1">
+<table border="0" class='border' cellpadding='2' cellspacing='1' width='100%'>
+  <tr class=tdbg>
+    <td align=right height=25>��ʾ��ʽ��</td>
+    <td height=25>
+		<Select id=iType name=iType> 
+		  <Option value=1 selected>��ͨ�б�</Option> 
+		  <Option value=2>�����б�</Option>
+		  <Option value=3>��׼��Ʒ��ʾ�б�</Option>
+        </Select> 
+	  </td>
+  </tr>
+  <tr class=tdbg>
+    <td align=right height=25>�б����ԣ�</td>
+    <td><Input id="IsShowTime" type="checkbox" value=1 name="IsShowTime">��ʾ����ʱ��&nbsp;&nbsp;&nbsp;&nbsp;<Input id="IsShowLink" type="checkbox" value=1 name="IsShowLink">��ʾ���³�����</td>
+  </tr>
+  <tr class=tdbg>
+    <td align=right height=25>��Ʒ�����ʾ������</td>
+    <td><input name="iNum" type="text" size="12" value="20"></td>
+  </tr>
+ <tr class=tdbg>
+    <td align=right height=25>���з�ʽ��</td>
+    <td height=25>
+		<Select id=iorder name=iorder> 
+		  <Option value=0 selected>������ʱ����������</Option> 
+		  <Option value=1>������ʱ�䵹������</Option>
+		  <Option value=2>�������������</Option>
+        </Select> 
+	</td>
+  </tr>
+  <tr class=tdbg>
+    <td align=right height=25>����ͼ��ȣ�</td>
+    <td><input name="iWidth"  type="text" size="12" value=""></td>
+  </tr>
+  <tr class=tdbg>
+    <td align=right height=25>����ͼ�߶ȣ�</td>
+    <td><input name="iHeight"  type="text" size="12" value=""></td>
+  </tr>
+  <tr class='tdbg'>
+	<td colspan=2 align='center'><input TYPE='button' value=' ȷ �� ' onCLICK='objectTag()'> </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

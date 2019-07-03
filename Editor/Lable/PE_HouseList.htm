@@ -1,0 +1,94 @@
+﻿<html>
+<head>
+<title>��ʾ������Ϣ�б��ǩ����</title>
+<script language="javascript">
+function objectTag() {
+    var strJS
+    var ShowInfoType
+	switch(document.form1.ShowInfoType.selectedIndex)
+    {
+      case 0: ShowInfoType='1'; break;
+      case 1: ShowInfoType='2'; break;
+	  case 2: ShowInfoType='3'; break;
+	  case 2: ShowInfoType='4'; break;
+	  case 2: ShowInfoType='5'; break;
+	}
+	switch(document.form1.InfoSource.selectedIndex)
+    {
+      case 0: InfoSource='1'; break;
+      case 1: InfoSource='2'; break;
+	}
+	strJS = '{$GetHouseList(';
+	strJS+=ShowInfoType;
+	strJS+=","+InfoSource;
+	strJS+=","+document.form1.InfoNum.value;	
+	strJS+=","+document.form1.IsShowHot.checked;
+	strJS+=","+document.form1.IsShowElite.checked;
+	strJS+=","+document.form1.IsShowContactName.checked;
+	strJS+=","+document.form1.IsShowHouseDiZhi.checked;
+	strJS+=","+document.form1.IsShowHouseHuXing.checked;
+	strJS+=","+document.form1.IsShowHouseLeiXing.checked;
+	strJS+=","+document.form1.IsShowPrice.checked;	
+	strJS+=","+document.form1.IsShowMianJi.checked;
+	strJS+=","+document.form1.IsShowTime.checked;
+	strJS+=","+document.form1.IsShowSource.checked;	
+	strJS+=')}';
+	window.returnValue = strJS;
+	window.close();
+}
+</script>
+<link href='Admin_Style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<form name="form1">
+<table width="560" border="0" class='border'  cellpadding='2' cellspacing='1'>
+  <tr>
+    <td colspan="2" class='title' align='center'><strong>��ʾ������Ϣ�б��ǩ���ã�</strong></td>
+  </tr>
+  <tr class=tdbg>
+    <td align=right height=25>������Ϣ���ͣ�</td>
+    <td height=25>
+		<Select id=ShowInfotType name=ShowInfoType> 
+		  <Option value=1 selected>����</Option> 
+		  <Option value=2>����</Option>
+		  <Option value=3>��</Option>
+		  <Option value=4>����</Option>
+		  <Option value=5>����</Option>
+        </Select> 
+	  </td>
+  </tr>
+  <tr class=tdbg>
+    <td align=right height=25>��Ϣ��Դ��</td>
+    <td>
+		<Select id="InfoSource" name="InfoSource"> 
+		  <Option value=1 selected>�н�</Option> 
+		  <Option value=2>����</Option>
+        </Select> 
+    </td>
+  </tr>
+  <tr class=tdbg>
+    <td align=right height=25>ÿҳ��ʾ����Ϣ������</td>
+    <td><input name="InfoNum" type="text" size="12" value="5"></td>
+  </tr>
+  <tr class=tdbg>
+    <td align=right height=25>��Ϣ���ݣ�</td>
+    <td height=25>
+		<Input id="IsShowHot" type="checkbox" value=1 name="IsShowHot">��ʾ�ȵ���Ϣ
+        <Input id="IsShowElite" type="checkbox" value=1 name="IsShowElite">��ʾ�Ƽ���Ϣ
+        <Input id="IsShowContactName" type="checkbox" value=1 name="IsShowContactName">��ʾ��ϵ��&nbsp;&nbsp;&nbsp;&nbsp;
+		<Input id="IsShowHouseDiZhi" type="checkbox" value=1 name="IsShowHouseDiZhi">��ʾ������ַ&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        <Input id="IsShowHouseHuXing" type="checkbox" value=1 name="IsShowHouseHuXing">��ʾ����&nbsp;&nbsp;&nbsp;&nbsp;
+		<Input id="IsShowHouseLeiXing" type="checkbox" value=1 name="IsShowHouseLeiXing">��ʾ��ҵ����
+		<Input id="IsShowPrice" type="checkbox" value=1 name="IsShowPrice">��ʾ�۸�����
+        <Input id="IsShowMianJi" type="checkbox" value=1 name="IsShowMianJi">��ʾ�������&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		<Input id="IsShowTime" type="checkbox" value=1 name="IsShowTime">��ʾ����ʱ��
+        <Input id="IsShowSource" type="checkbox" value=1 name="IsShowSource">��ʾ��Ϣ��Դ&nbsp;&nbsp;&nbsp;&nbsp;
+	</td>
+  </tr>
+  <tr class='tdbg'>
+    <td colspan=2 align='center'><input TYPE='button' value=' ȷ �� ' onCLICK='objectTag()'> </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

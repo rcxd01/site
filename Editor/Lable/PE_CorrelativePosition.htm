@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+<title>��ʾ���ְλ���Ƶ���Ϣ</title>
+<script language="javascript">
+function objectTag() {
+    var strJS,OrderType,ShowDateType,OpenType;
+	switch(document.form1.OrderType.selectedIndex)
+    {
+      case 0: OrderType='1'; break;
+      case 1: OrderType='2'; break;
+	  case 2: OrderType='3'; break;
+      case 3: OrderType='4'; break;
+	}
+	switch(document.form1.ShowDateType.selectedIndex)
+    {
+      case 0: ShowDateType='0'; break;
+      case 1: ShowDateType='1'; break;
+	  case 2: ShowDateType='2'; break;
+      case 3: ShowDateType='3'; break;
+	}
+	switch(document.form1.OpenType.selectedIndex)
+    {
+      case 0: OpenType='0'; break;
+      case 1: OpenType='1'; break;
+	}
+
+	strJS = '{$GetCorrelativePosition(';
+	strJS+=document.form1.PositionNum.value;
+	strJS+=","+OrderType;
+	strJS+=","+document.form1.TitleLen.value;
+	strJS+=","+ShowDateType;
+	strJS+=","+document.form1.Cols.value;
+	strJS+=OpenType;
+	strJS+=')}';
+	window.returnValue = strJS;
+	window.close();
+}
+</script>
+<link href='Admin_Style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<form name="form1">
+<table width="600" border="0" class='border'  cellpadding='2' cellspacing='1'>
+  <tr>
+    <td colspan="3" class='title' align='center'><strong>��ʾְλ�б��ǩ���ã�</strong></td>
+  </tr>
+  <tr class=tdbg>
+    <td align=left height=25>��ʾְλ����</td>
+    <td><input name="PositionNum"  type="text" size="12" value="0"></td>
+	<td align=left height=25><font color="red">0Ϊ���е����ְλ</font></td>
+  </tr>
+  <tr class=tdbg>
+    <td align=left height=25>����ʽ</td>
+    <td height=25 colspan="2">
+		<Select id=OrderType name=OrderType style=width:130px> 
+		  <Option value=0 selected>��ְλID����</Option> 
+		  <Option value=1>��ְλID����</Option>
+		  <Option value=2 selected>������ʱ�併��</Option> 
+		  <Option value=3>������ʱ������</Option>
+        </Select> 
+	</td>
+  </tr>
+  <tr class=tdbg>
+    <td align=left height=25>ְλ���Ƴ��ȣ�</td>
+    <td><input name="TitleLen" type="text" size="12" value="8"></td>
+	<td height=25><font color="red">һ������=����Ӣ���ַ�<br>��Ϊ0������ʾ����ְλ��</font></td>
+  </tr>
+  <tr class=tdbg>
+    <td align=left height=25>����������ʾ��ʽ��</td>
+    <td height=25 colspan="2">
+		<Select id=ShowDateType name=ShowDateType style=width:130px> 
+		  <Option value=0>����ʾ����</Option> 
+		  <Option value=1 selected>��ʾ������(2006-03-04)</Option>
+		  <Option value=2>��ʾ����(3��4��)</Option>
+		  <Option value=3>��ʾ����(03-04)</Option> 
+        </Select> 
+	</td>
+  </tr>
+    <tr class=tdbg>
+    <td align=left height=25>ÿ�е�������</td>
+    <td><input name="Cols"  type="text" size="12" value="3"></td>
+	<td align=left height=25><font color="red">ÿ�е������������������ͻ���</font></td>
+  </tr>
+  <tr class=tdbg>
+    <td align=left height=25>����ְλҳ�򿪷�ʽ��</td>
+    <td height=25 colspan="2">
+		<Select id=OpenType name=OpenType> 
+		  <Option value=0>ԭ���ڴ�</Option> 
+		  <Option value=1 selected>�´��ڴ�</Option>
+        </Select> 
+	</td>
+  </tr>
+  <tr class='tdbg'>
+	<td colspan=3 align='center'><input TYPE='button' value=' ȷ �� ' onCLICK='objectTag()'> </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

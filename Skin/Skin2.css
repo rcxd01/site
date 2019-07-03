@@ -1,0 +1,663 @@
+﻿.top_tdbgall,.center_tdbgall
+{
+border-right:7px solid #ffffff;
+border-left:7px solid #ffffff;
+width:774px!important;
+width:760px;
+}
+
+/* ��վ�����ܵ�CSS����:�ɶ�������Ϊ����������ɫ����ʽ�� */
+a{text-decoration: none;} /* �������»���,��Ϊunderline */ 
+a:link {color: #000000;} /* δ���ʵ����� */
+a:visited {color: #333333;} /* �ѷ��ʵ����� */
+a:hover{COLOR: #AE0927;} /* ����������� */ 
+a:active {color: #0000ff;} /* ����������� */
+/* ����Ƶ���������ӵ�CSS���壭��������Ƶ��������������վ�����ܵ�CSS����ֿ����Ժ�����������ǳ�ֵĸ�ʽ�����Ҫ����ԭ���������ʽ�����˶�������ɾ�����������վ�����ܵ�CSS��ͬ���ɡ����ô���Ϊ<a class='Channel' ***>***</a> */
+a.Channel:link {color: #ffffff;}
+a.Channel:visited {color: #ffffff;}
+a.Channel:hover{COLOR: #ffff00;}
+a.Channel:active {color: #ffffff;}
+/* ������ǰƵ���������ӵ�CSS���壭�����ô���Ϊ<a class='Channel2' ***>***</a> */
+a.Channel2:link {color: #ffff00;}
+a.Channel2:visited {color: #ffff00;}
+a.Channel2:hover{COLOR: #FF6600;}
+a.Channel2:active {color: #ffff00;}
+/* �ײ���Ȩ��Ϣ�������ӵ�CSS���壭���붥��Ƶ���������Ӷ�����뷨��ͬ���������붥��Ƶ���������Ӷ��岻ͬ��������ɫ����ҳ�ڶ�����Ԥ������ô���Ϊ<a class='Bottom' ***>***</a> */
+a.Bottom:link {color: #ffffff;}
+a.Bottom:visited {color: #ffffff;}
+a.Bottom:hover{COLOR: #ffff00;}
+a.Bottom:active {color: #ffffff;}
+/* ������Ŀ�����������ӵ�CSS���壭���������붥��Ƶ���������Ӷ��岻ͬ��������ɫ����ҳ�ڶ�����Ԥ���Ҫ��ͬ�ɲ����á����ô���Ϊ<a class='Class' ***>***</a> */
+a.Class:link {color: #333333;}
+a.Class:visited {color: #333333;}
+a.Class:hover{COLOR: #F76400;}
+a.Class:active {color: #333333;}
+
+/* Body��CSS����:��ӦCSS�С�BODY�����ɶ�������Ϊ��ҳ������ɫ��������������߿�� */
+BODY
+{
+margin:0px;
+margin-top:4px;
+margin-bottom:4px;
+FONT-SIZE: 9pt;
+/*background:url(/Skin/blue/bg_all.gif);
+background-position:center;*/
+BACKGROUND-COLOR: #A9A38F; 
+text-decoration: none;
+SCROLLBAR-FACE-COLOR: #f6f6f6;
+SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #cccccc; SCROLLBAR-3DLIGHT-COLOR: #cccccc; SCROLLBAR-ARROW-COLOR: #330000; SCROLLBAR-TRACK-COLOR: #f6f6f6; SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+}
+/* ��Ԫ���CSS����:��ӦCSS�еġ�TD��������Ϊ�ܵı���壬Ϊһ����ĵĵ�Ԫ�������ã��ɶ�������Ϊ������������ɫ����ʽ�� */
+TD
+{
+FONT-FAMILY:����;FONT-SIZE: 9pt;line-height: 150%; 
+}
+/* �ı����CSS����:��ӦCSS�еġ�INPUT��������Ϊ�ı���ķ�����ã��ɶ�������Ϊ���������塢��ɫ���߿�� */
+Input
+{
+BACKGROUND-COLOR: #ffffff; 
+BORDER-BOTTOM: #666666 1px solid;
+BORDER-LEFT: #666666 1px solid;
+BORDER-RIGHT: #666666 1px solid;
+BORDER-TOP: #666666 1px solid;
+COLOR: #666666;
+HEIGHT: 18px;
+border-color: #666666 #666666 #666666 #666666; font-size: 9pt
+}
+/* ��ť��CSS����:��ӦCSS�еġ�BUTTON��������Ϊ��ť�ķ�����ã��ɶ�������Ϊ���������塢��ɫ���߿�� */
+Button
+{
+FONT-SIZE: 9pt;HEIGHT: 20px;
+}
+/* �����б���CSS����:��ӦCSS�еġ�SELECT��������Ϊ�����б��ķ�����ã��ɶ�������Ϊ���������塢��ɫ���߿�� */
+Select
+{
+FONT-SIZE: 9pt;HEIGHT: 20px;
+}
+/* �����û���¼�������ӵ�CSS���� */
+.top_UserLogin
+{
+color: #037FA8;
+}
+
+/* ==Ƶ��ͨ�ñ��CSS���忪ʼ== */
+.Channel_border /* ��ɫ���߿򱳾���ɫ����(760) */
+{
+border: 1px solid #cccccc;
+}
+.Channel_title /* ���ⱳ����ɫ����(760) */
+{
+background: #cccccc;color: #037FA8;height: 27;text-align: center;font-weight:bold;
+}
+.Channel_tdbg /* ��񱳾���ɫ����(760) */
+{
+background:#FAFAFA;line-height: 120%;
+}
+.Channel_pager /* ��ҳ��񱳾���ɫ����(760) */
+{
+background:#FAFAFA;line-height: 120%;
+}
+
+����/* --������ʾҳ��CSS���忪ʼ-- */
+.Comment_border /* ��ɫ���߿򱳾���ɫ����(760) */
+{
+border: 1px solid #449AE8;
+}
+.Comment_title /* ���ⱳ����ɫ����(760) */
+{
+background:#449AE8;color: #ffffff;font-weight: normal;height: 25;
+}
+.Comment_tdbg1 /* ��񱳾���ɫ����(760) */
+{
+background:#FFFFFF;line-height: 120%;
+}
+.Comment_tdbg2 /* ������ʾ1px��񱳾���ɫ���� */
+{
+background:#FAFAFA;
+}
+����/* --������ʾҳ��CSS�������-- */
+/* ==Ƶ��ͨ�ñ��CSS�������== */ 
+
+/* ==��̱������ֵ�CSS���忪ʼ== */
+/* [ͼ��]��̱������ֵ�CSS���� */
+.S_headline1
+{
+color: blue;
+}
+/* [��ͼ]��̱������ֵ�CSS���� */
+.S_headline2
+{
+color: #FF6600;
+}
+/* [�Ƽ�]��̱������ֵ�CSS���� */
+.S_headline3
+{
+color: green;
+}
+/* [ע��]��̱������ֵ�CSS���� */
+.S_headline4
+{
+color: red;
+}
+/* ==��̱������ֵ�CSS���忪ʼ== */
+
+/* ==top.asp�е�CSS���忪ʼ== */
+.top_tdbgall /* ��������ܱ�����ɫ���� */
+{
+width: 760;background:#843328;
+}
+.top_top
+{
+background:#ffffff;height:7px;
+}
+.top_Channel /* Ƶ����񱳾���������ɫ���� */
+{
+background:#D04833;color:#ffffff!important;text-align: right;height:24px;
+}
+.top_Announce /* �����񱳾���������ɫ���� */
+{
+background:url(/Skin/blue/top_nav_menu.gif);color: #0560A6;height: 30;
+}
+.top_nav_menu /* ��������񱳾���������ɫ���� */
+{
+/*background:url(/Skin/blue/top_nav_menu.gif);*/
+background:#A67F64;
+border-top:1px solid #ffffff;
+border-bottom:1px solid #843328;
+color: #333333;height: 26;
+}
+.top_Path /* �����ڵ�λ�ñ�񱳾���������ɫ���� */
+{
+border-right:7px solid #ffffff;
+border-left:7px solid #ffffff;
+width:774px!important;
+width:760px;
+height: 30;
+background:#ffffff;
+}
+.top_UserLogin /* �����û���¼�������ӵ�CSS���� */
+{
+color: #037FA8
+}
+/* ==top.asp�е�CSS�������== */
+
+/* ==��ҳ�в��е�CSS���忪ʼ== */
+.center_tdbgall /* �в�����ܱ�����ɫ���� */
+{
+background:#ffffff;
+}
+����/* --��ҳ�в�������CSS���忪ʼ-- */
+.left_tdbgall /* ��������ܱ�����ɫ���� */
+{
+background:#ffffff;
+}
+.left_title /* ���������񱳾���������ɫ���� */
+{
+/*background:url(/Skin/blue/Special_List4.gif);*/
+background:#A67F64;
+color:#ffffff;
+border-bottom:1px solid #ffffff;
+font-weight:bold;
+height: 28;
+width:180;
+padding-left:20;
+text-align: left;
+background-image: url(../Images/Special_List6.gif);
+background-repeat: no-repeat;
+background-position: 5px 1px;
+}
+.left_tdbg1 /* �������ݱ�񱳾���������ɫ���� */
+{
+line-height: 150%;padding-left:5;padding-right:8;
+background:#D6D4D0;
+}
+.left_tdbg2 /* �����ײ���񱳾���������ɫ���� */
+{height: 1;
+}
+.right_title /* ���������񱳾���������ɫ���� */
+{
+background:url(/Skin/blue/right_title.gif);font-weight:bold;color: ffffff;height: 28;width:180;padding-left:40;text-align: left;
+}
+����/* --��ҳ�в�������CSS�������-- */
+����/* --��ҳ�в�������CSS���忪ʼ-- */
+.main_tdbgall /* ��������ܱ�����ɫ���� */
+{
+width: 572;background:#ffffff;
+}
+.main_shadow /* �������ݼ���񱳾���ɫ����(575) */
+{
+height: 4;
+background:#ffffff;
+}
+.main_announce /* ���������񱳾���������ɫ���� */
+{
+color: 037FA8;height: 25;background:#f9f9f9;border: 1px solid #D2D3D9;
+}
+.main_Search /* ����������񱳾���������ɫ���� */
+{
+
+color: 037FA8;
+height: 25;
+border: 1px solid #D2D3D9;background:#f9f9f9;
+}
+.main_top /* ���������Ƽ���񱳾���ɫ���� */
+{
+background:url(/Skin/blue/main_top.gif);height: 187;
+}
+.main_title_760i /* ��վ��ҳ���������񱳾���������ɫ����(760) */
+{
+color: ffffff;
+/*background:url(/Skin/blue/main_title_760i.gif);*/
+background:#BEB7A1;
+border-bottom: 2px solid #A67F64;
+text-align: left;padding-left:15;height: 26;
+}
+.main_title_760i a{color: ffffff;}
+.main_title_760i a:hover{color: ffff00;}
+.main_tdbg_760i /* ��վ��ҳ�������ݱ�񱳾���������ɫ����(760) */
+{
+border: 1px solid #D2D3D9;line-height: 150%;text-align: left;padding-left:5;padding-right:5;
+}
+.main_title_575 /* ���������񱳾���������ɫ����(575) */
+{
+color:#4B4C4A;background:#BEB7A1;
+/*background:url(/Skin/blue/main_title_575.gif);*/
+text-align: left;padding-left:20;height: 26;
+}
+.main_tdbg_575 /* �������ݱ�񱳾���������ɫ����(575) */
+{
+/*border: 1px solid #F7F6F4;*/
+background:#F7F6F4;
+line-height: 150%;
+text-align: left;
+padding-left:5;
+padding-right:5;
+}
+.main_title_282i /* ��Ŀ�����б�����񱳾���������ɫ����(282) */
+{
+/*background:url(/Skin/blue/main_title_282i.gif);*/
+color: #4B4C4A;background:#BEB7A1;
+height: 26;padding-left:15;
+}
+.main_tdbg_282i /* ��Ŀ�����б����ݱ�񱳾���������ɫ����(282) */
+{
+border: 1px solid #D2D3D9;line-height: 150%;text-align: left;padding-left:5;padding-right:5;
+}
+.main_title_282 /* ��Ŀ�����б�����񱳾���������ɫ����(282) */
+{
+/*background:url(/Skin/blue/main_title_282.gif);*/
+background:#A9A38F;
+color: #843328;
+height: 26px;
+border-bottom: 2px solid #F5B301;
+padding-left:15;
+}
+.main_tdbg_282 /* ��Ŀ�����б����ݱ�񱳾���������ɫ����(282) */
+{
+border: 1px solid #D2D3D9;line-height: 150%;text-align: left;padding-left:5;padding-right:5;
+}
+.listbg /* --��Ŀ�����б����ݼ����ɫ�Ķ���1-- */
+{
+background:#ffffff;
+}
+.listbg2 /* --��Ŀ�����б����ݼ����ɫ�Ķ���2-- */
+{
+background:#f7f7f7;
+}
+����/* --��ҳ�в�������CSS�������-- */
+����/* --������ʾҳ��CSS���忪ʼ-- */
+
+.main_ArticleTitle /* ������������ɫ���� */
+{
+color: ff0000;font-weight:bold;font-size: 18;line-height: 150%;
+}
+.main_ArticleSubheading /* ������������ɫ���� */
+{
+color: 037FA8;font-weight:bold;line-height: 150%;
+}
+.main_title_760 /* ���⵼����񱳾���������ɫ����(760) */
+{
+background:url(/Skin/blue/main_title_760.gif);border: 1px solid #D2D3D9;height: 28;color: ffffff;
+}
+.main_tdbg_760 /* ���ݱ�񱳾���������ɫ����(760) */
+{
+border: 1px solid #D2D3D9;padding: 8;line-height: normal;
+}
+.Article_tdbgall /* ���ȱ�񱳾���������ɫ����(760) */
+{
+background:#f5f5f5;
+}
+
+����/* --������ʾҳ��CSS�������-- */
+����/* --����Ƶ��CSS���忪ʼ-- */
+/* ������Ŀ�����������ӵ�CSS���壭�����ô���Ϊ<a class='Guest' ***>***</a> */
+a.Guest:link {color: #ffffff;}
+a.Guest:visited {color: #ffffff;}
+a.Guest:hover{COLOR: #ff0000;}
+a.Guest:active {color: #ffffff;}
+
+.Guest_title_760 /* ���⵼����񱳾���������ɫ����(760) */
+{
+/*background:url(/Skin/blue/main_title_760.gif);*/
+background:#BEB7A1;
+
+border: 1px solid #D2D3D9;padding-left:5;height: 29;color: ffffff;
+}
+.Guest_tdbg_760 /* ���ݱ�񱳾���������ɫ����(760) */
+{
+border: 1px solid #D2D3D9;padding: 8;
+}
+.Guest_border /* ��ɫ���߿򱳾���ɫ����(760) */
+{
+border: 1px solid #D6D4D0;
+}
+.Guest_title /* ���ⱳ����ɫ����(760) */
+{
+background:#D6D4D0;color: #333333;font-weight: normal;height: 25;
+}
+.Guest_tdbg /* ��񱳾���ɫ����(760) */
+{
+background:#FAFAFA;line-height: 120%;
+}
+.Guest_tdbg_1px /* ������ʾ1px��񱳾���ɫ���� */
+{
+background:#D2D3D9;
+}
+.Guest_border2 /* �ظ�������߱߿򱳾���ɫ����(760) */
+{
+border: 1px dashed #97D2DF;background:#E8F5F8;color: #006633;
+}
+.Guest_ReplyAdmin /* ����Ա�ظ����ֱ�����ɫ����(760) */
+{
+color: #ff0000;
+}
+.Guest_ReplyUser /* �û��ظ����ֱ�����ɫ����(760) */
+{
+color: #449AE8;
+}
+����/* --����Ƶ��CSS�������-- */
+����/* --�̳ǵ�CSS���忪ʼ-- */
+.Shop_border /* ��ɫ���߿򱳾���ɫ����(760) */
+{
+border: 1px solid #D6D4D0;
+width:100%;
+}
+.Shop_border3 /* ��ɫ���߿򱳾���ɫ����(760) */
+{
+border: 1px solid #cccccc;
+}
+.Shop_title /* ���ⱳ����ɫ����(760) */
+{
+background:#D6D4D0;
+
+color: #333333;font-weight: normal;height: 27;
+}
+.Shop_tdbg /* ��񱳾���ɫ����(760) */
+{
+background:#FAFAFA;line-height: 120%;
+}
+.Shop_tdbg2 /* ��񱳾���ɫ����2 */
+{
+background:#f5f5f5;line-height: 120%;
+}
+.Shop_tdbg3 /* ��񱳾���ɫ����3 */
+{
+background:#ffffff;line-height: 120%;
+}
+.Shop_tdbg4 /* ��񱳾���ɫ����4 */
+{
+background:#E1F4EE;line-height: 120%;
+}
+
+����/* --�̳ǵ�CSS�������-- */
+/* ==��ҳ�в��е�CSS�������== */
+
+/* ==Bottom.asp�е�CSS���忪ʼ== */
+.Bottom_tdbgall /* �ײ�����ܱ�����ɫ���� */
+{
+background:#838383;
+border-bottom:7px solid #ffffff;
+border-right:7px solid #ffffff;
+border-left:7px solid #ffffff;
+width:774px!important;
+width:760px;
+}
+.Bottom_Adminlogo /* ������Ϣ��񱳾���������ɫ���� */
+{
+background:#843328;color:#ffffff;
+}
+.Bottom_Copyright /* ��Ȩ��Ϣ��񱳾���������ɫ���� */
+{
+background:#E8E6E6;
+}
+/* ==Bottom.asp�е�CSS�������== */
+
+/* ==��ѡ����е�CSS�������== */
+.menu
+{
+background-color: #cccccc;width:97%;border: 1px;
+}
+.menuBody
+{
+background-color: #ffffff;
+}
+/* ==��ѡ����е�CSS�������== */
+.Channel_font /* ����������������ɫ���� */
+{
+color: red;
+}
+/* --������ʾҳ��CSS���忪ʼ-- */ 
+.Guest_font /* ���ء��û�������������ɫ���� */
+{
+color: green;
+}
+/* --������ʾҳCSS�������-- */
+/* --����Ƶ��CSS���忪ʼ-- */
+/* ������Ŀ�����������ӵ�CSS���壭�����ô���Ϊ<a class='Guest' ***>***</a> */
+a.Guest:link {color: #000000;}
+a.Guest:visited {color: #000000;}
+a.Guest:hover{COLOR: #ff6600;}
+a.Guest:active {color: #000000;} 
+
+/* վ������������ɫ���� */
+a.Channel_KeyLink{text-decoration: underline;}
+a.Channel_KeyLink:link {color: blue;}
+a.Channel_KeyLink:visited {color: blue;}
+a.Channel_KeyLink:hover{color: #ff0000;}
+a.Channel_KeyLink:active {color: blue;}
+
+/* --�û�����css���忪ʼ-- */
+.user_left /*�����鶨��*/
+{
+background:#f3f3f3;width:170px;padding-left: 4px;border-left-width: 2px;border-left-style: solid;border-left-color: #ffffff;padding-right: 4px;
+}
+.user_box/*�������ڱ���������*/
+{
+border: 1px solid #bfbfbf;background-color: #ffffff;border-collapse:15;
+}
+.user_righttitle {
+background-color: #f3f3f3;padding-top: 5px;padding-right: 5px;padding-bottom: 1px;padding-left: 5px;
+border-top-width: 2px;border-right-width: 2px;border-bottom-width: 1px;border-left-width: 2px;
+border-top-style: solid;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;
+border-top-color: #ffffff;border-right-color: #ffffff;border-bottom-color: #bfbfbf;border-left-color: #ffffff;
+}
+.user_line {
+line-height: 1px;background-image: url(images/line.gif);
+}
+.user_toolstop/*�������ڱ���������*/
+{
+line-height: 28px;font-size: 12px;font-weight: bold;color: #666666;padding-left: 10px;letter-spacing: 4pt;
+}
+.user_toolsbot/*�����������ݶ���*/
+{
+line-height: 25px;font-size: 12px;color: #666666;border-right-width: 4px;border-right-style: solid;border-right-color: #ffffff;
+}
+.user_toolspoint/*�����ڼ�ͷ������*/
+{
+padding-left: 6px;
+}
+
+/*�û����������*/
+.user_right {
+background-color: #ffffff;padding-right: 2px;padding-left: 6px;width:572px;
+}
+.border1
+{
+border: 1px solid #bfbfbf;
+}
+
+.title
+{
+background:#449ae8;color: #ffffff;font-weight: normal;
+}
+.border
+{
+border: 1px solid #449ae8;
+}
+.tdbg
+{
+background:#f0f0f0;line-height: 120%;
+}
+.tdbgmouseover{
+background:#bfdfff;line-height: 120%;
+}
+.tdbg2
+{
+background:#e0eef5;line-height: 120%;
+}
+.tdbg5
+{
+background:#e0eef5;line-height: 120%;
+}
+.title5
+{
+width:80px;background:url('../user/images/titlebg2.gif');line-height: 120%;padding-top:2px;cursor:hand;
+}
+.title6
+{
+width:80px;background:url('../user/images/titlebg1.gif');color: #ffffff;font-weight: normal;padding-top:2px;cursor:hand;
+}
+.button1
+{
+width:90px;
+}
+.show_page {
+text-align: center;
+}
+
+
+/* �̶��ſα�����css����*/
+.date_border
+{
+border: 1px solid ;
+}
+.date_title
+{
+background:#449ae8;color: #ffffff;font-weight: normal;
+}
+.date_tdbg
+{
+background:#449ae8;color: #ffffff;font-weight: normal;
+}
+.style2
+{
+font-size: 10px;
+}
+.style3
+{
+font-size: 12px;
+}
+
+/* ==RSS���ӿ���== */
+#popitmenu {
+    BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; Z-INDEX: 100; VISIBILITY: hidden; FONT: 12px/18px Verdana; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; POSITION: absolute; BACKGROUND-COLOR: white
+}
+#popitmenu A {
+    DISPLAY: block; PADDING-LEFT: 6px; COLOR: black; TEXT-DECORATION: none;
+}
+#popitmenu A:hover {
+    BACKGROUND-COLOR: #ccff9d;
+}
+
+/* ==�û���¼����== */
+.user_border{
+border-right:7px solid #ffffff;
+border-left:7px solid #ffffff;
+width:774px!important;
+width:760px;
+}
+#userlogined
+{
+    padding-left:10;text-align: left;
+}
+#userctrl
+{
+    text-align: center;
+}
+#usermessage
+{
+    padding-left:10;text-align: left;
+}
+.havemessage
+{
+    BACKGROUND-COLOR: #ccff9d;
+}
+.havemessaged
+{
+    BACKGROUND-COLOR: #cc0000;
+}
+.spaceList  /* �ۺϿռ��б���� */
+{
+width: 100%;text-align: center;
+}
+.spaceList_image
+{
+text-align: center;
+}
+.spaceList_intro
+{
+text-align: center;
+}
+#showspacelist_more
+{
+text-align: right;padding-right:10;
+}
+/* ==������ϢDIV��ť����== */
+#supply{
+margin:0px;
+padding:0px;
+color:#fff;
+}
+.Supplybut,.Supplybutover{
+margin:0px;
+padding:1px;
+line-height:25px;
+border-top: 1px solid #D2D3D9;border-right: 1px solid #D2D3D9;border-left: 1px solid #D2D3D9;text-align: left;padding-left:30;padding-right:15px;
+DISPLAY: block;
+float:left;
+margin-right:8px;
+cursor:hand;
+}
+.Supplybut{
+background:url(/Skin/blue/main_title_575.gif);
+}
+.Supplybutover{
+background:url(/Skin/blue/main_title_282.gif);
+}
+/* --������Ϣ�б���css���忪ʼ-- */
+.houselistbg /* --������Ϣ�б����ݼ����ɫ�Ķ���1-- */
+{
+background:#ffffff;
+}
+.houselistbg2 /* --������Ϣ�б����ݼ����ɫ�Ķ���2-- */
+{
+background:#f6f9ff;
+}
+.houseth{
+background:#e6f5ff;
+}
+.housetable{
+border: 1px solid #ffffff;
+border-collapse: collapse;
+}
+/* --������Ϣ�б���css�������--

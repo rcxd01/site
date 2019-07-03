@@ -1,0 +1,1 @@
+document.writeln("<iframe frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" border=\"0\" id=\"alimamaifrm\" name=\"alimamaifrm\" scrolling=\"no\" height=\"2432px\" width=\"98%\" src=\"http:\/\/www.taobao.com\/go\/chn\/tbk_channel\/channelcode.php?pid=mm_11410497_0_0&eventid=101329\" ><\/iframe>")

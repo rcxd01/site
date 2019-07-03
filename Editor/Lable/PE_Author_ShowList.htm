@@ -1,0 +1,100 @@
+﻿<html>
+<head>
+<title>��ʾ���������б�</title>
+<script language="javascript">
+function objectTag() {
+    var strJS;
+    strJS = '{$ShowAuthorList(';
+    strJS+=document.form1.ChannalID.value;
+    strJS+=","
+    strJS+=document.form1.Num.value;
+    strJS+=","+document.form1.AuthorType.selectedIndex;
+    strJS+=","+document.form1.ShowType.selectedIndex;
+    strJS+=","+document.form1.Heigh.value;
+    strJS+=","+document.form1.Width.value;
+    strJS+=","+document.form1.IntroNum.value;
+    strJS+=","+document.form1.Position.selectedIndex;
+    strJS+=","+document.form1.More.value;
+    strJS+=","+document.form1.ColNum.value;
+    strJS+=')}';
+    window.returnValue = strJS;
+    window.close();
+}
+</script>
+<link href='Admin_Style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<form name="form1">
+<table border="0" class='border' cellpadding='2' cellspacing='1' width='100%'>
+  <tr class='title'>
+    <td colspan="2" align='center'><strong>��ʾ���������б��ǩ���ã�</strong></td>
+  </tr>
+  <tr class='tdbg'>
+    <td width="130" align=right height=25 class='tdbg5'><STRONG>Ƶ��ID��</STRONG></td>
+    <td><input name="ChannalID" type="text" size="6" value="0">&nbsp;&nbsp;Ϊ0ʱ��ʾȫ��</td>
+  </tr>
+  <tr class='tdbg'>
+    <td width="130" align=right height=25 class='tdbg5'><STRONG>������ʾ������</STRONG></td>
+    <td><input name="Num" type="text" size="6" value="2"></td>
+  </tr>
+  <tr class='tdbg'>
+    <td width="130" align=right height=25 class='tdbg5'><STRONG>���߷��ࣺ</STRONG></td>
+    <td height=25>
+        <Select id=AuthorType name=AuthorType> 
+          <Option value=0 selected>ȫ��</Option> 
+          <Option value=1>����</Option>
+          <Option value=2>��̨</Option> 
+          <Option value=3>����</Option> 
+          <Option value=4>��վ��Լ</Option> 
+        </Select> 
+      </td>
+  </tr>
+  <tr class='tdbg'>
+    <td width="130" align=right height=25 class='tdbg5'><STRONG>��ʾ��ʽ��</STRONG></td>
+    <td height=25>
+        <Select id=ShowType name=ShowType> 
+          <Option value=0 selected>��ͨ</Option> 
+          <Option value=1>��ʾͷ��˵��</Option>
+          <Option value=2>��ʾͷ����ʾ˵��</Option> 
+        </Select> 
+    </td>
+  </tr>
+  <tr class='tdbg'>
+    <td width="130" align=right height=25 class='tdbg5'><STRONG>ͷ��߶ȣ�</STRONG></td>
+    <td>
+    <input name="Heigh" type="text" size="6" value="496">px</td>
+  </tr>
+  <tr class='tdbg'>
+    <td width="130" align=right height=25 class='tdbg5'><STRONG>ͷ���ȣ�</STRONG></td>
+    <td><input name="Width" type="text" size="6" value="60">px</td>
+  </tr>
+  <tr class='tdbg'>
+    <td width="130" align=right height=25 class='tdbg5'><STRONG>˵��������</STRONG></td>
+    <td><input name="IntroNum" type="text" size="6" value="50">px</td>
+  </tr>
+  <tr class='tdbg'>
+    <td width="130" align=right height=25 class='tdbg5'><STRONG>ͼƬ������λ�ã�</STRONG></td>
+    <td height=25>
+        <Select id="Position" name="Position"> 
+          <Option value=0 selected>ͼ��</Option> 
+          <Option value=1>ͼ��</Option>
+          <Option value=2>ͼ��</Option> 
+          <Option value=3>ͼ��</Option> 
+        </Select> 
+      </td>
+  </tr>
+  <tr class='tdbg'>
+    <td width="130" align=right height=25 class='tdbg5'><STRONG>�������ʾ���֣�</STRONG></td>
+    <td><input name="More" type="text" size="10" value="more...">&nbsp;&nbsp;������Ϊnoneʱ����ʾ</td>
+  </tr>
+  <tr class='tdbg'>
+    <td width="130" align=right height=25 class='tdbg5'><STRONG>��ʾ����</STRONG></td>
+    <td><input name="ColNum" type="text" size="6" value="2"></td>
+  </tr>
+  <tr class='tdbg'>
+    <td colspan=2 align='center'><input TYPE='button' value=' ȷ �� ' onCLICK='objectTag()'> </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

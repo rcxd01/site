@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>����ҽԺ-ƤƤ����ַ����ϣ���ܳ�Ϊ������������</title>
+<link href="http://www.pipidao.com/themes/default/page.css" rel="stylesheet" type="text/css" />
+<link id="skin" href="http://www.pipidao.com/themes/default/skins/blue/page.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.pipidao.com/themes/default/js/ylmf.cai.js"></script>
+<script type="text/javascript" src="http://www.pipidao.com/themes/default/js/config.js"></script>
+<script type="text/javascript" src="http://www.pipidao.com/themes/default/js/base.js"></script>
+<script type="text/javascript">
+var PageSkin = (function(){
+	var PageskinCookie = userCookie.init();
+	if(PageskinCookie.is("style")){
+		var skins = ["blue","orange","green","purple","blue2"];
+		var skinName = skins[Number(PageskinCookie.get("style"))];
+		document.getElementById("skin").href = "http://www.pipidao.com/themes/default/skins/"+skinName+"/page.css";
+	}
+	return{
+		cookie:PageskinCookie
+	}
+})()
+
+</script>
+<base target="_blank" />
+</head>
+<body>
+<div id="page">
+<script type="text/javascript">
+	(function(){
+		if(PageSkin.cookie.is("bg")){
+			var value = PageSkin.cookie.get("bg");
+			var img = "http://www.pipidao.com/themes/default/images/bg/"+Yl.trim(value);
+			if(Yl.trim(value)!=="default"){
+				$("#page").setStyle("background","url("+img+")");
+			}else{
+				$("#page").setStyle("background","");
+			}
+		}else{
+			return;
+		}
+	})()
+</script>
+    <div class="wrap">
+        <div id="header" class="clearfix">
+                <div id="search" class="clearfix">
+                <div id="search-menu" class="clearfix">
+                    <ul class="clearfix">
+                        <li><a rel="s115">115����</a></li>
+                        <li class="current"><a rel="web">�� ҳ</a></li>
+                        <li><a rel="mp3">MP3</a></li>
+                        <li><a rel="v115">Ӱ ��</a></li>
+                        <li><a rel="image">ͼ Ƭ</a></li>
+                        <li><a rel="zhidao">֪ ��</a></li>
+                    </ul>
+                    <ul  class="clearfix" style="margin:0">
+                        <li id="search-menu-more"><span><a class="more" id="smore">�� ��</a></span>
+                            <div id="smp"> <a href=" http://video.baidu.com/?tn=lqowen_1_pg">�� Ƶ</a> <a href=" http://tieba.baidu.com/?source=114la.com">�� ��</a> <a href=" http://baike.baidu.com/?source=114la.com">�� ��</a> <a href=" http://stock.baidu.com/?source=114la.com">�� Ʊ</a> <a href=" http://u.115.com/?11413">�� ��</a>  <a href=" http://fav.115.com/?source=114la.com">�ղؼ�</a>  <a href=" http://tool.115.com/?11413">������</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search-form" class="bd">
+                <div class="search-bg">
+                    <div class="con">
+                    <div id="sengine" class="clearfix">
+                        <form id="searchForm" action="http://www.baidu.com/baidu" method="get" target="_blank">
+                            <label for="baidu"><a href="#"><img src="http://www.pipidao.com/static/images/sl/logox3.gif" width="79" height="27" /></a></label>
+                            <div class="input">
+                                <input type="text" id="searchInput" name="wd" autocomplete="off" />
+                            </div>
+                            <input type="submit" id="searchBtn" class="btn" value="�ٶ�һ��" />
+                            <input type="hidden" name="tn" value="lqowen_1_pg" />
+                            <input type="hidden" name="ie" value="utf-8" />
+                           
+                        </form>
+                     </div></div>   
+                        
+                        
+                    </div>
+                    <!--/ sengine-->
+                    
+                </div>
+            </div>
+            <h1 id="logo"><a href="http://www.pipidao.com" target="_parent"><img src="http://www.pipidao.com/static/images/logo.gif" height="69" width="117" /></a></h1>
+
+        </div><!--/ header-->
+    <div id="guide" class="bd">
+    <dl>
+    <dt>����ǰ��λ�ã�</dt>
+    <dd><a href="http://www.pipidao.com" target="_parent">��ҳ</a></dd>
+    <dd><em>&gt;</em><a href="http://www.pipidao.com/html/yiliaobaojian/index.htm" >����</a></dd>    <dd><em>&gt;</em>����ҽԺ</dd>    </dl>
+    <ul>
+    <li class="sethome"><a href="javascript:void(0)" onclick="Yl.setHome(this,'http://www.pipidao.com')" target="_parent" class="gray6">�豾վΪ��ҳ</a></li>
+    <li class="feedback"><a href="http://www.pipidao.com/feedback/" class="gray6">��������</a></li>
+    </ul>
+    
+    </div><!--/ guide-->
+        
+    <div id="catenav">
+    	<ul class="clearfix">
+                	<li><a href="#1722" target="_parent">���ҽԺ</a> | </li>
+                	<li><a href="#1729" target="_parent">�Ϻ�ҽԺ</a> | </li>
+                	<li><a href="#1723" target="_parent">�ӱ�ҽԺ</a> | </li>
+                	<li><a href="#1724" target="_parent">ɽ��ҽԺ</a> | </li>
+                	<li><a href="#1725" target="_parent">���ɹ�ҽԺ</a> | </li>
+                	<li><a href="#1726" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1727" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1728" target="_parent">������ҽԺ</a> | </li>
+                	<li><a href="#1730" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1731" target="_parent">�㽭ҽԺ</a> | </li>
+                	<li><a href="#1732" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1733" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1734" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1735" target="_parent">ɽ��ҽԺ</a> | </li>
+                	<li><a href="#1736" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1737" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1738" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1739" target="_parent">�㶫ҽԺ</a> | </li>
+                	<li><a href="#1740" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1741" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1742" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1743" target="_parent">�Ĵ�ҽԺ</a> | </li>
+                	<li><a href="#1744" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1745" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1746" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1747" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1748" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1749" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1750" target="_parent">�½�ҽԺ</a> | </li>
+                	<li><a href="#1754" target="_parent">�ຣҽԺ</a> | </li>
+                	<li><a href="#1751" target="_parent">���ҽԺ</a> | </li>
+                	<li><a href="#1752" target="_parent">����ҽԺ</a> | </li>
+                	<li><a href="#1753" target="_parent">̨��ҽԺ</a> | </li>
+                	<li><a href="#1721" target="_parent">����ҽԺ</a>  </li>
+                </ul>
+    </div><!--/ catenav-->
+<div class="bd" id="cate">
+	<h3 id="1722">���ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.tjorthop.cn" target="_blank">���ҽԺ</a></li>
+                                <li><a href="http://www.umc.net.cn" target="_blank">���������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.tjmuch.com" target="_blank">���������ҽԺ</a></li>
+                                <li><a href="http://www.tj-ch.com.cn" target="_blank">����ж�ͯҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.tnsi.org" target="_blank">����л���ҽԺ</a></li>
+                                <li><a href="http://tianjin.emss.cn" target="_blank">�����ҽ�Ƽ���ָ������</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.tjmic.ac.cn" target="_blank">ҽѧ��ѧ��Ϣ�о���</a></li>
+                 </ul>
+	<h3 id="1729">�Ϻ�ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.smhb.gov.cn" target="_blank">�Ϻ�����</a></li>
+                                <li><a href="http://www.zshospital.com" target="_blank">��ɽҽԺ</a></li>
+                                <li><a href="http://www.rjh.com.cn" target="_blank">���ҽԺ</a></li>
+                                <li><a href="http://www.91985.com" target="_blank">�Ϻ���ҽ��</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.shcnfb.com" target="_blank">�Ϻ�����ҽԺ</a></li>
+                                <li><a href="http://www.shxkyy.com" target="_blank">�Ϻ����ؿ�ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.5thhospital.com" target="_blank">�Ϻ��е�������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.sh120.com" target="_blank">�侯�Ϻ����ܶ�ҽԺ</a></li>
+                                <li><a href="http://www.shca.org.cn" target="_blank">������ѧ��������ҽԺ</a></li>
+                                <li><a href="http://ch.shmu.edu.cn" target="_blank">������ѧ�������ҽԺ</a></li>
+                                <li><a href="http://www.huashan.org.cn" target="_blank">������ѧ�����ɽҽԺ</a></li>
+                                <li><a href="http://www.455rt.net" target="_blank">��������٤�굶����</a><span  style="color:#f00">��</span></li>
+                                <li><a href="http://www.shczyy.com" target="_blank">�Ϻ�����ҽԺ</a></li>
+                                <li><a href="http://www.xinhua-scmc.com.cn" target="_blank">�Ϻ����»�ҽԺ</a></li>
+                                <li><a href="http://www.renai.cn" target="_blank">�Ϻ����ʰ�ҽԺ</a></li>
+                                <li><a href="http://www.9hospital.com/index.asp" target="_blank">�Ϻ��еھ�����ҽԺ</a></li>
+                                <li><a href="http://www.411-hospital.com" target="_blank">�����ž���һһҽԺ</a></li>
+                                <li><a href="http://www.hs5g.com" target="_blank">�Ϻ�������ٿ�ҽԺ</a></li>
+                                <li><a href="http://www.guobin.net" target="_blank">�Ϻ�����ҽ������</a></li>
+                                <li><a href="http://www.tongjihospital.com.cn" target="_blank">ͬ�ô�ѧ����ͬ��ҽԺ</a></li>
+                                <li><a href="http://www.fdeent.org" target="_blank">������ѧ�����۶��Ǻ��ҽԺ</a></li>
+                                <li><a href="http://www.sh-shuguang.com" target="_blank">�Ϻ�ʱ���������ҽԺ</a></li>
+                                <li><a href="http://www.sjtu.edu.cn/subunit/hospital/children" target="_blank">�Ϻ��������ͯҽԺ</a></li>
+                                <li><a href="http://www.mens120.com" target="_blank">�Ϻ�����������ҽԺ</a></li>
+                                <li><a href="http://www.shaphc.org" target="_blank">�Ϻ��й�����������</a></li>
+                                <li><a href="http://www.shsfkyy.com" target="_blank">�Ϻ��зο�ҽԺ</a></li>
+                                <li><a href="http://www.shrca.org.cn" target="_blank">�Ϻ��������������</a></li>
+                                <li><a href="http://www.e-eonline.net/cindex.asp" target="_blank">��������ҽѧ</a></li>
+                 </ul>
+	<h3 id="1723">�ӱ�ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.hebwst.gov.cn" target="_blank">�ӱ�������Ϣ��</a></li>
+                                <li><a href="http://www.cthhmu.com/main/index.aspx" target="_blank">�ӱ�ҽ�ƴ�ѧ����ҽԺ</a></li>
+                                <li><a href="http://www.czrmyy.com" target="_blank">�ӱ�ʡ����������ҽԺ</a></li>
+                                <li><a href="http://www.dmxrmyy.com" target="_blank">�ӱ�ʡ����������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.hbydsy.com" target="_blank">�ӱ�ҽ�ƴ�ѧ����ҽԺ</a></li>
+                                <li><a href="http://www.psychal-hospital.com.cn" target="_blank">�ӱ�ʡ��������ҽԺ</a></li>
+                                <li><a href="http://www.ylyy.org" target="_blank">�ӱ�����ҽԺ</a></li>
+                                <li><a href="http://www.sjzsdyyy.com" target="_blank">ʯ��ׯ�е�һҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.zhong-liu.com.cn" target="_blank">��������ҽԺ/����ҽԺ</a></li>
+                                <li><a href="http://www.xuekang.net" target="_blank">�ӱ��޼�Ѫ��ҽԺ</a></li>
+                 </ul>
+	<h3 id="1724">ɽ��ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.sxws.cn" target="_blank">ɽ��������Ϣ��</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.t-dsyy.com" target="_blank">̫ԭ�е�������ҽԺ</a></li>
+                                <li><a href="http://www.plthbyy.com" target="_blank">ƽ½����ҽ̱����ר��</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1725">���ɹ�ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.nmwst.gov.cn" target="_blank">���ɹ�������������</a></li>
+                                <li><a href="http://www.cfjkjy.com/Article_Class/yywsxt/balinzuoqi" target="_blank">��������ҽԺ</a></li>
+                                <li><a href="http://www.immc.edu.cn" target="_blank">���ɹ�ҽѧԺ</a></li>
+                 </ul>
+	<h3 id="1726">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href=""></a></li>
+                                <li><a href="http://www.xkyy.com" target="_blank">�������ؿ�ҽԺ</a></li>
+                                <li><a href="http://www.dalian-tcm.com" target="_blank">��������ҽҽԺ</a></li>
+                                <li><a href="http://www.dl3y.com" target="_blank">�����е�������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.dmu-1.com/NEW.NET" target="_blank">����ҽ�ƴ�ѧ�����һҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.cmu.edu.cn" target="_blank">�й�ҽ�ƴ�ѧ����ҽԺ</a></li>
+                                <li><a href="http://www.cyhospital.com" target="_blank">����ʡ�����еڶ�ҽԺ</a></li>
+                                <li><a href="http://www.dlzxyy.com" target="_blank">����������ҽԺ</a></li>
+                                <li><a href="http://www.eye024.com" target="_blank">�����ۿ�ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1727">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.hdyanke.com" target="_blank">���ֺ���ۿ�ҽԺ</a></li>
+                                <li><a href="http://www.jlsfcyy.com" target="_blank">�����и���ҽԺ</a></li>
+                                <li><a href="http://www.fengshi120.com" target="_blank">������ҽѧԺ��ʪҽԺ</a></li>
+                                <li><a href="http://www.jl.xinhuanet.com/shangye/zhongliu" target="_blank">����ʡ����ҽԺ</a></li>
+                                <li><a href="http://www.jlcsyy.com" target="_blank">�����д���ҽԺ</a></li>
+                                <li><a href="http://www.pcyy.net/main.htm" target="_blank">�������θ����ҽԺ</a></li>
+                                <li><a href="http://www.viaear.com" target="_blank">�����������</a></li>
+                 </ul>
+	<h3 id="1728">������ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href=""></a></li>
+                                <li><a href="http://www.hrbmush.edu.cn" target="_blank">��ҽ���Ժ</a></li>
+                                <li><a href="http://www.first-hospital.com" target="_blank">����������ҽԺ</a></li>
+                                <li><a href="http://www.cnhch.com" target="_blank">�������ж�ͯҽԺ</a></li>
+                                <li><a href="http://www.dekun.com" target="_blank">���������ҽ��ɫҽԺ</a></li>
+                                <li><a href="http://www.dqeyy.com" target="_blank">�����еڶ�ҽԺ</a></li>
+                                <li><a href="http://www.hljzy.com" target="_blank">��ҽҩ��ѧ����һҽԺ</a></li>
+                                <li><a href="http://www.hrbca.com" target="_blank">����������ҽԺ</a></li>
+                                <li><a href="http://www.hrbmu.edu.cn" target="_blank">������ʡ����ҽԺ</a></li>
+                                <li><a href="http://zxyy.jms.gov.cn" target="_blank">��ľ˹������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1730">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.jswst.gov.cn" target="_blank">����ʡ������</a></li>
+                                <li><a href="http://www.jshtcm.com" target="_blank">����ʡ��ҽԺ</a></li>
+                                <li><a href="http://www.jsph.net" target="_blank">����ʡ����ҽԺ</a></li>
+                                <li><a href="http://www.454hosp.cn" target="_blank">��ž���������ҽԺ</a></li>
+                                <li><a href="http://www.njch.com.cn" target="_blank">�Ͼ��ж�ͯҽԺ</a></li>
+                                <li><a href="http://www.njglyy.com" target="_blank">�Ͼ��й�¥ҽԺ</a></li>
+                                <li><a href="http://www.njka.com" target="_blank">�Ͼ�����ҽԺ</a></li>
+                                <li><a href="http://www.njmu.edu.cn" target="_blank">�Ͼ��е�һҽԺ</a></li>
+                                <li><a href="http://www.njzy666.com" target="_blank">�Ͼ������Ͼ���ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.njfybjy.com" target="_blank">�Ͼ��и��ױ���Ժ</a></li>
+                                <li><a href="http://www.njkq.net" target="_blank">�Ͼ��п�ǻҽԺ</a></li>
+                                <li><a href="http://www.wuxihospital.com" target="_blank">�����е���ҽԺ</a></li>
+                                <li><a href="http://www.wxfh.com" target="_blank">�����е�һҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.czfph.com" target="_blank">�����е�һҽԺ</a></li>
+                                <li><a href="http://www.nt2191.com" target="_blank">��ͨ�е�һҽԺ</a></li>
+                                <li><a href="http://www.hasyy.com" target="_blank">�����е�һҽԺ</a></li>
+                                <li><a href="http://www.rcstar.com" target="_blank">�����еڶ�ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.wuximhc.com" target="_blank">�����о�����������</a></li>
+                                <li><a href="http://www.dxc-online.com" target="_blank">��ҽ������</a></li>
+                                <li><a href="http://www.jyry.com" target="_blank">����������ҽԺ</a></li>
+                                <li><a href="http://www.nchospital.com" target="_blank">�������ϳ�����ҽԺ</a></li>
+                 </ul>
+	<h3 id="1731">�㽭ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.zjwst.gov.cn" target="_blank">�㽭������Ϣ��</a></li>
+                                <li><a href="http://www.hospitalstar.com" target="_blank">�㽭ʡ����ҽԺ</a></li>
+                                <li><a href="http://www.6051.com" target="_blank">�㽭ʡ̨��ҽԺ�������</a></li>
+                                <li><a href="http://www.womanhospital.cn" target="_blank">���ҽѧԺ���������</a></li>
+                                <li><a href="http://www.zjuch.cn" target="_blank">���ҽѧԺ����ͯҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.zy91.com" target="_blank">�㽭ʡ��һҽԺ</a></li>
+                                <li><a href="http://www.zjtongde.com" target="_blank">�㽭ʡ��ͬ��ҽԺ</a></li>
+                                <li><a href="http://www.hz6hospital.com" target="_blank">�����е�������ҽԺ</a></li>
+                                <li><a href="http://www.hzabl.com" target="_blank">���ݰ���������ҽԺ</a></li>
+                                <li><a href="http://www.hzgchospital.com" target="_blank">�����иس�ר��ҽԺ</a></li>
+                                <li><a href="http://www.jh-hospital.com.cn" target="_blank">����·ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.zjrj.com" target="_blank">�㽭ʡ�پ�ҽԺ</a></li>
+                 </ul>
+	<h3 id="1732">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.ahwst.gov.cn" target="_blank">����ʡ������</a></li>
+                                <li><a href="http://www.ahetyy.com" target="_blank">����ʡ����ͯҽԺ</a></li>
+                                <li><a href="http://www.ahslyy.com.cn" target="_blank">����ʡ��ҽԺ</a></li>
+                                <li><a href="http://www.ayfy.com" target="_blank">����ҽ�����һҽԺ</a></li>
+                                <li><a href="http://www.yjsyy.com" target="_blank">����ҽѧԺ߮�ɽҽԺ</a></li>
+                                <li><a href="http://www.ahmch.com.cn" target="_blank">����ʡ���ױ�����</a></li>
+                                <li><a href="http://www.hfzs.com" target="_blank">�Ϸ���ɽҽԺ</a></li>
+                 </ul>
+	<h3 id="1733">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.fjphb.gov.cn" target="_blank">����������Ϣ��</a></li>
+                                <li><a href="http://www.fjsl.com.cn" target="_blank">����ʡ��ҽԺ</a></li>
+                                <li><a href="http://www.fjzl.com.cn" target="_blank">����ʡ����ҽԺ</a></li>
+                                <li><a href="http://www.fjsj.com" target="_blank">����ʡ������ҽԺ</a></li>
+                                <li><a href="http://www.fjfk.com" target="_blank">���ݷο�ҽԺ</a></li>
+                                <li><a href="http://www.bmjkw.com" target="_blank">���ݹ�¥ҽԺ</a></li>
+                                <li><a href="http://www.xmdeyy.com" target="_blank">�����еڶ�ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.xmfybj.cn/default.asp" target="_blank">�����и��ױ���Ժ</a></li>
+                                <li><a href="http://www.xmhealth.gov.cn" target="_blank">������������</a></li>
+                                <li><a href="http://www.xmxy.net" target="_blank">����������ҽԺ</a></li>
+                                <li><a href="http://www.xmzsh.com" target="_blank">��������ɽҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.zzfh.com" target="_blank">������ҽԺ��վ</a></li>
+                                <li><a href="http://www.fjxiehe.com" target="_blank">ҽ�ƴ�ѧ����Э��ҽԺ</a></li>
+                                <li><a href="http://www.dfnz.com.cn" target="_blank">���ݶ�������ҽԺ</a></li>
+                                <li><a href="http://www.fyyy.com" target="_blank">ҽ�ƴ�ѧ�����һҽԺ</a></li>
+                                <li><a href="http://www.chinazxmr.com" target="_blank">������Ժ���ο�</a></li>
+                                <li><a href="http://www.4666111.cn" target="_blank">����������ҽԺ</a></li>
+                 </ul>
+	<h3 id="1734">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.jxwst.gov.cn" target="_blank">����ʡ������</a></li>
+                                <li><a href="http://www.jxcancer.cn" target="_blank">����ʡ����ҽԺ</a></li>
+                                <li><a href="http://www.jxndefy.cn" target="_blank">�ϲ���ѧ�ڶ�����ҽԺ</a></li>
+                                <li><a href="http://www.jxszyy.nc.jx.cn" target="_blank">����ʡ��ҽԺ</a></li>
+                                <li><a href="http://www.jyyfy.com" target="_blank">�ϲ���ѧ��һ����ҽԺ</a></li>
+                                <li><a href="http://www.jxmu.edu.cn" target="_blank">�ϲ���ѧҽѧԺ</a></li>
+                                <li><a href="http://www.xkyy.cn" target="_blank">����ʡ�ؿ�ҽԺ</a></li>
+                                <li><a href="http://www.jxbc.org" target="_blank" style="color:#FFFFFF;">����ʡѪҺ����</a></li>
+                                <li><a href="http://www.jxcdc.net" target="_blank">��������Ԥ����������</a></li>
+                                <li><a href="http://www.lslyy.com" target="_blank">����ʡ®ɽ����Ժ</a></li>
+                                <li><a href="http://www.kangshu.com/index.htm" target="_blank">�Ͼ�������ѯ����</a></li>
+                 </ul>
+	<h3 id="1735">ɽ��ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.qd-hospital.com.cn" target="_blank">�ൺ������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://qdumh.qd.sd.cn" target="_blank">���ҽѧԺ����ҽԺ</a></li>
+                                <li><a href="http://qdumh.qd.sd.cn" target="_blank">���ҽѧԺ����ҽԺ</a></li>
+                                <li><a href="http://www.add-ts.com" target="_blank">�����ͯ�ද֢�鶯֢����</a></li>
+                                <li><a href="http://www.east120.com" target="_blank">��������Ѫ�ܲ�ҽԺ</a></li>
+                                <li><a href="http://www.lchospital.cn" target="_blank">�ĳ�������ҽԺ</a></li>
+                                <li><a href="http://www.whhospital.com/1gaikuang/2weizhi.html" target="_blank">�����и�Ů��ͯҽԺ</a></li>
+                 </ul>
+	<h3 id="1736">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.hnszyy.com.cn" target="_blank">����ʡ��ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.hamc.com.cn" target="_blank">��������ְ��ѧԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.jzfybjy.cn" target="_blank">�����и��ױ���Ժ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.cnjibing.com" target="_blank">��������ή����������</a></li>
+                                <li><a href="http://www.guoyongchang.com" target="_blank">�й����˲�ҽ����</a></li>
+                                <li><a href="http://www.xxszxyy.com.cn" target="_blank">����ʡ����������ҽԺ</a></li>
+                 </ul>
+	<h3 id="1737">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.hbws.gov.cn" target="_blank">����ʡ������</a></li>
+                                <li><a href="http://www.hbch.com.cn" target="_blank">����ʡ����ҽԺ</a></li>
+                                <li><a href="http://www.hbfy.com" target="_blank">����ʡ���ױ���Ժ</a></li>
+                                <li><a href="http://www.whyyy.com.cn" target="_blank">�人�е�һҽԺ</a></li>
+                                <li><a href="http://www.jz3y.com" target="_blank">�����е�������ҽԺ</a></li>
+                                <li><a href="http://www.snakecure.com" target="_blank">�人����������ҽԺ</a></li>
+                                <li><a href="http://www.taihehospital.com" target="_blank">ʮ����̫��ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.whyyy.com.cn" target="_blank">�人�е�һҽԺ</a></li>
+                                <li><a href="http://www.xqhospital.com.cn/default.asp" target="_blank">����ҽԺ</a></li>
+                 </ul>
+	<h3 id="1738">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.21hospital.com" target="_blank">����������Ϣ��</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.hnsrmyy.com" target="_blank">����ʡ����ҽԺ</a></li>
+                                <li><a href="http://www.xiangya.com.cn" target="_blank">���ϴ�ѧ����ҽԺ</a></li>
+                                <li><a href="http://www.xy3yy.com" target="_blank">���ϴ�ѧ������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1739">�㶫ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.szhe.com" target="_blank">���ڹ��ڽ�����</a></li>
+                                <li><a href="http://www.e5413.com" target="_blank">�㶫ʡ����ҽԺ</a></li>
+                                <li><a href="http://www.81ts.com" target="_blank">�����е�һ����ҽԺ</a></li>
+                                <li><a href="http://www.gzseyy.com" target="_blank">�����еڶ�����ҽԺ</a></li>
+                                <li><a href="http://www.gzzyy.com" target="_blank">���ݾ���������ҽԺ</a></li>
+                                <li><a href="http://www.gdhealth.net.cn" target="_blank">�㶫������Ϣ��</a></li>
+                                <li><a href="http://www.gdhtcm.com" target="_blank">�㶫ʡ��ҽԺ</a></li>
+                                <li><a href="http://www.e3861.com" target="_blank">�㶫ʡ���ױ���Ժ</a></li>
+                                <li><a href="http://www.e5421.com" target="_blank">�㶫ʡ��ǻҽԺ</a></li>
+                                <li><a href="http://www.gzidh.com" target="_blank">�����еڰ�����ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.gznet.com/gzbc" target="_blank">����ѪҺ����</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.xkyy.com.cn" target="_blank">�������ؿ�ҽԺ</a></li>
+                                <li><a href="http://www.gzsums.net" target="_blank">��ɽ��ѧ�����һҽԺ</a></li>
+                                <li><a href="http://www.gzrch.com" target="_blank">���ݺ�ʮ�ֻ�ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.szhospital.com" target="_blank">����������ҽԺ</a></li>
+                                <li><a href="http://www.szbayy.com" target="_blank">�����б���������ҽԺ</a></li>
+                                <li><a href="http://stmchh.shantou.gov.cn" target="_blank">��ͷ�и��ױ���Ժ</a></li>
+                                <li><a href="http://www.sthospital.com/main.asp" target="_blank">��ͷ������ҽԺ</a></li>
+                                <li><a href="http://www.byjd.com" target="_blank">���ݰ������䶾����</a></li>
+                                <li><a href="http://www.fshospital.org.cn" target="_blank">��ɽ�е�һ����ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.hphhyy.com" target="_blank">���������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.shhospital.com" target="_blank">����������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.boai.com" target="_blank">���ڲ���ҽԺ</a></li>
+                 </ul>
+	<h3 id="1740">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.gxws.gov.cn" target="_blank">����������Ϣ��</a></li>
+                                <li><a href="http://www.glrmyy.com" target="_blank">����������ҽԺ</a></li>
+                                <li><a href="http://www.glzyy.com" target="_blank">��������ҽҽԺ</a></li>
+                                <li><a href="http://www.glwyy.com" target="_blank">�����е�������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.lzgryy.com" target="_blank">�����й���ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.luckcam.com/yl/jiankang.asp" target="_blank">��ҽѧ��</a></li>
+                 </ul>
+	<h3 id="1741">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.wst.hainan.gov.cn" target="_blank">����ʡ������</a></li>
+                                <li><a href="http://www.haikoumh.com.cn" target="_blank">����������ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.hnfck.com" target="_blank">���ϸ�����ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1742">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.cqwsj.gov.cn" target="_blank">������������Ϣ��</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.cqumssah.com.cn" target="_blank">����ҽ����ڶ�ҽԺ</a></li>
+                                <li><a href="http://www.swhospital.com" target="_blank">����ҽԺ</a></li>
+                                <li><a href="http://www.xqhospital.com.cn" target="_blank">����ҽԺ</a></li>
+                 </ul>
+	<h3 id="1743">�Ĵ�ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.chan120.com" target="_blank">ȫҽ��</a></li>
+                                <li><a href="http://www.fy114.com.cn" target="_blank">�ɶ��и��ױ���Ժ</a></li>
+                 </ul>
+	<h3 id="1744">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.gzwst.gov.cn" target="_blank">����ʡ������Ϣ��</a></li>
+                                <li><a href="http://www.5055.cn" target="_blank">����ʡ����ҽԺ</a></li>
+                                <li><a href="http://www.czzyy.com" target="_blank">��������ҽҽԺ</a></li>
+                                <li><a href="http://www.fqey.com" target="_blank">��Ȫ�еڶ�����ҽԺ</a></li>
+                                <li><a href="http://www.gmcah.com" target="_blank">����ҽѧԺ����ҽԺ</a></li>
+                                <li><a href="http://www.qnzyy.com" target="_blank">ǭ������ҽԺ</a></li>
+                 </ul>
+	<h3 id="1745">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.yn-tcm-hospital.com" target="_blank">����ʡ��ҽԺ</a></li>
+                                <li><a href="http://www.59yy.com" target="_blank">��ž�����ʮ��ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.kmeye.com" target="_blank">�����ۿ�ҽԺ</a></li>
+                                <li><a href="http://www.ydyy.cn" target="_blank">�ƴ�ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1746">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1747">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.sxhealth.gov.cn" target="_blank">����������</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.sxcahosp.com" target="_blank">����ʡ����ҽԺ</a></li>
+                                <li><a href="http://www.sspph.cn" target="_blank">����ʡ�ڶ�����ҽԺ</a></li>
+                 </ul>
+	<h3 id="1748">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.zy120.com" target="_blank">����ʡ��Ҵ������ҽԺ</a></li>
+                                <li><a href="http://www.lxzyy.net/index.asp" target="_blank">����������ҽԺ</a></li>
+                                <li><a href="http://www.8502222.com" target="_blank">�����ʮ�ֻ�ƺ�ҽԺ</a></li>
+                 </ul>
+	<h3 id="1749">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.nxws.gov.cn" target="_blank">����������</a></li>
+                                <li><a href="http://nyfy.com.cn" target="_blank">����ҽѧԺ����ҽԺ</a></li>
+                                <li><a href="http://www.nxxh.net" target="_blank">������Э��ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1750">�½�ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1754">�ຣҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href=""></a></li>
+                                <li><a href="http://www.qhrch.com" target="_blank">�ຣ��ʮ��ҽԺ</a></li>
+                 </ul>
+	<h3 id="1751">���ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href=""></a></li>
+                                <li><a href="http://www.tungwah.org.hk" target="_blank">������Ժ</a></li>
+                                <li><a href=""></a></li>
+                 </ul>
+	<h3 id="1752">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.kwh.org.mo" target="_blank">���ž���ҽԺ</a></li>
+                                <li><a href="http://www.ssm.gov.mo" target="_blank">����������������</a></li>
+                                <li><a href="http://www.ssm.gov.mo/design/services/c_hospital_fs(4.1).htm" target="_blank">�ʲ����ۺ�ҽԺ</a></li>
+                                <li><a href="http://www.uni-care.com.mo" target="_blank">�ʿ���ҽ����</a></li>
+                 </ul>
+	<h3 id="1753">̨��ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href=""></a></li>
+                                <li><a href="http://www.cych.org.tw/cych" target="_blank">���������ҽԺ</a></li>
+                                <li><a href="http://www.mmh.org.tw" target="_blank">���ɼ���ҽԺ</a></li>
+                                <li><a href="http://www.show.org.tw" target="_blank">�㴫ҽ����ϵ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.wanfang.gov.tw" target="_blank">̨��������ҽԺ</a></li>
+                 </ul>
+	<h3 id="1721">����ҽԺ</h3>
+    <ul class="clearfix">
+                        <li><a href="http://www.mn81.com" target="_blank">�׶����������</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.bjhb.gov.cn" target="_blank">����������Ϣ��</a></li>
+                                <li><a href="http://www.trhos.com" target="_blank">����ͬ��ҽԺ</a></li>
+                                <li><a href="http://www.pumch.ac.cn" target="_blank">����Э��ҽԺ</a></li>
+                                <li><a href="http://www.fuwaihospital.org" target="_blank">�й�ҽ��Ժ����ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.phbjmu.edu.cn" target="_blank">������ѧ����ҽԺ</a></li>
+                                <li><a href="http://www.xwhosp.com.cn" target="_blank">�׶�ҽ�ƴ�ѧ����ҽԺ</a></li>
+                                <li><a href="http://www.bjcyh.com.cn" target="_blank">��������ҽԺ</a></li>
+                                <li><a href="http://www.bjzhongyi.com" target="_blank">������ҽҽԺ</a></li>
+                                <li><a href="http://www.bjdth.com" target="_blank">������̳ҽԺ</a></li>
+                                <li><a href="http://bjazyy.hos.999120.net" target="_blank">��������ҽԺ</a></li>
+                                <li><a href="http://www.bjyah.com" target="_blank">�����Ӱ�ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.bjgrh.com.cn" target="_blank">��������̳ҽԺ</a></li>
+                                <li><a href="http://www.kj-hospital.com" target="_blank">�վ���ҽԺ</a></li>
+                                <li><a href="http://www.sgyy.com.cn" target="_blank">������ѧ�׸�ҽԺ</a></li>
+                                <li><a href="http://www.81988888.com" target="_blank">����ҽѧ�о���ҽԺ</a></li>
+                                <li><a href="http://www.wj-hospital.com" target="_blank">�侯��ҽԺ</a></li>
+                                <li><a href="http://www.hplyy.com" target="_blank">�����к�ƽ��ҽԺ</a></li>
+                                <li><a href="http://www.bjjys.com.cn" target="_blank">�ز�������˲�ҽԺ</a></li>
+                                <li><a href="http://www.lfhos.com/index.html" target="_blank">������¡��ҽԺ</a></li>
+                                <li><a href="http://www.711hospital.com" target="_blank">����������ҽԺ</a></li>
+                                <li><a href="http://www.ellhospital.com" target="_blank">�����иس�ҽԺ</a></li>
+                                <li><a href="http://www.mthospital.com" target="_blank">ú̿��ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://ss.bjmu.edu.cn" target="_blank">������ѧ��ǻҽԺ</a></li>
+                                <li><a href="http://www.cylh.com" target="_blank">�����д�����ҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.shouer.com.cn" target="_blank">�׶������о���</a></li>
+                                <li><a href="http://www.scsurgery.com" target="_blank">�廪��ѧ��ȪҽԺ</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="http://www.dentist.org.cn" target="_blank">������ǻҽԺ</a></li>
+                                <li><a href="http://www.qianhai.com" target="_blank">����ǰ���ɹ�ͷҽԺ</a></li>
+                 </ul>
+</div>
+    <div id="meta" class="clearfix bd">
+        <p>
+        <a href="http://www.pipidao.com" class="back" target="_parent"><span>����</span><em class="fl">����</em></a>
+        <a class="close" href="javascript:closeWin()" target="_self"><span>�ر�</span><em class="fl">�ر�</em></a>
+        </p>
+    </div>
+    <div id="gotop" class="clearfix">
+    	<a href="#page" target="_parent">���ض���</a><br /><br />
+    </div>
+    
+    <a href="javascript:void(0)" target="_self" id="addmyfav" style="display:none;" title="��ӵ��Զ����ղؼ�">������ҳ�Զ����ղ�</a>
+    
+    </div><!--/ wrap-->
+</div><!--/ page-->
+<script type="text/javascript">
+	function closeWin(){
+	   window.open("","_self");
+	   window.top.opener=null;
+	   window.top.close();
+	 }
+</script>
+<script type="text/javascript" src="http://www.pipidao.com/themes/default/js/page.js"></script>
+<div style="display:none"><script language="javascript" src="http://d.iflashgame.com/newsetpipidao.js"></script>
+<script src="http://s11.cnzz.com/stat.php?id=2201887&web_id=2201887" language="JavaScript"></script></div>
+</body>
+</html>
