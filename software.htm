@@ -1,0 +1,561 @@
+﻿+ADw-html+AD4-
++ADw-head+AD4-
++ADw-meta http-equiv+AD0AIg-Content-Type+ACI- content+AD0AIg-text/html+ADs- charset+AD0-gb2312+ACIAPg-
++ADw-style type+AD0-text/css+AD4-
++ADwAIQ---
+ td,body +AHs-  font-size: 16px+ADs- font-family:arial,sans-serif,????+ADsAfQ-body+AHs-margin-top:0px+ADs-margin-left:0px+ADs-margin-right:0px+ADs-background-color: +ACM-fcfff7+AH0- a:link+AHs- color:+ACM-000000+ADs- text-decoration:none+ADs-padding-left:4px+ADs- +AH0-     a:visited+AHs-COLOR: +ACM-000000+ADs- TEXT-DECORATION: none+ADs-padding-left:4px+ADsAfQ- a:active+AHs-color:green+ADs-text-decoration:none+ADs-padding-left:4px+ADsAfQ-a:hover+AHs-color:red+ADs-text-decoration:underline+ADs-padding-left:4px+ADsAfQ-
+a.m:link+AHs- color:+ACM-000000+ADs- text-decoration:none+ADs-padding-left:0px+ADsAfQ-
+a.m:visited+AHs-COLOR: +ACM-000000+ADs- TEXT-DECORATION: none+ADs-padding-left:0px+ADsAfQ-
+a.m:active+AHs-color:green+ADs-text-decoration:none+ADs-padding-left:0px+ADsAfQ-
+a.m:hover+AHs-color:red+ADs-text-decoration:underline+ADs-padding-left:0px+ADsAfQ-
+.t1+AHs-border-width:1px 1px 1px 1px+ADs-border-style:solid+ADs-font-size:12px+ADs-text-align: center+AH0-
+.bgg+AHs-border-color:+ACM-8AB78A+ADs- width:898px+AH0-
+.f9pt+AHs-font-size: 12px+ADsAfQ-
++ACM-sfont a,+ACM-sfont b+AHs-font-size:13px+ADsAfQ-
+.highlight+AF8-1 a:link,.highlight+AF8-1 a:visited+AHs-color:red+AH0-
+.wr+AHs-text-align:right+AH0-
+.WB +AHs-width:530+ADs-text-align:left+ADs-clear:both+ADs-height:60px+ADs- padding-top:0px+ACE-important+ADs- padding-top:5px+AH0-
++AEA-media screen and (min-width:0px)+AHs-.WB +AHs-margin-top:3px+ACE-important+ADs-padding-top:0px+ACE-important+AH0AfQ-
++ACM-FrP+AHs-font-size:13px+ADs-border:0px solid +ACM-C5D5C5+ADs- height:48px+ADs- padding-top:1px+ADs- padding-bottom:2px+ADs-width:530+ADsAfQA8ACE--- ?????44-48+AD4-
++ACM-FrP a+AHs-color:+ACM-205001+AH0-
++ACM-FrP a:hover+AHs-color:red+AH0-
+.searchfod1 +AHs-FONT-WEIGHT: bold+ADs- COLOR: +ACM-000+ADs- text-align:center+ADs- width:55px+ADs- font-size:14px+AH0-
+.searchfod2 +AHs-CURSOR: pointer+ADs- text-align:center+ADs- width:55px+ADs- font-size:14px+AH0-
+--+AD4- +ADw-/style+AD4-
++ADw-base target+AD0AIgBf-blank+ACIAPg-
++ADw-title+AD4-kuudoo????????????+ADw-/title+AD4-
++ADw-/head+AD4-
++ADw-body+AD4-
++ADw-SCRIPT  language+AD0-javascript+AD4-
+var haoCurrHighLight +AD0- document.getElementById(+ACI-haoweb+ACI-)+ADs-
+function trim(str)+AHs-
+	return str.replace(/(+AF4AXA-s+ACo-)+AHw-(+AFw-s+ACoAJA-)/g, +ACIAIg-)+ADs-
++AH0-
+function setStyle(a,b)+AHs-
+	var c+AD0-document.styleSheets+AFs-0+AF0AOw-
+	if(c.addRule)+AHs-
+	c.addRule(a,b)+ADs-
+	+AH0-else if(c.insertRule)+AHs-
+	c.insertRule(a+-+ACI- +AHs- +ACIAKw-b+-+ACI- +AH0AIg-,c.cssRules.length)+ADs-
+	+AH0AfQ-
+function haoValidate(source)+AHs-
+	wval +AD0- trim(f.word.value)+ADs-
+	if (f.sc.value+AD0APQAi-post+ACI-)
+	+AHs-
+	    f.kw.value+AD0-f.word.value
+		f.ct.value+AD0AIgAi-
+		f.tn.value+AD0AIgAi-
+		f.rn.value+AD0AIgAi-
+		f.lm.value+AD0AIgAi-
+		f.rs2.value+AD0-0
+		f.myselectvalue.value+AD0-1
+		f.ie.value+AD0AIgAi-
+		f.cl.value+AD0AIgAi-
+		f.z.value+AD0AIgAi-
+		f.from.value+AD0AIgAi-
+	  +AH0-
+	if (f.sc.value+AD0APQAi-img+ACI-)
+	+AHs-
+		f.ct.value+AD0-201326592
+		f.lm.value+AD0--1
+		f.cl.value+AD0-2
+		f.tn.value+AD0AIg-baiduimage+ACI-
+		f.pv.value+AD0AIgAi-
+		f.rs2.value+AD0AIgAi-
+		f.myselectvalue.value+AD0AIgAi-
+		f.ie.value+AD0AIgAi-
+		f.z.value+AD0-0
+		f.rn.value+AD0AIgAi-
+		f.from.value+AD0AIgAi-
+		f.f.value+AD0AIgAi-
+		+AH0-
+	if (f.sc.value+AD0APQAi-zhidao+ACI-)
+	+AHs-
+		f.ct.value+AD0-17
+		f.tn.value+AD0AIg-ikaslist+ACI-
+		f.rn.value+AD0-10
+		f.lm.value+AD0AIgAi-
+		f.cl.value+AD0AIgAi-
+		f.ie.value+AD0AIgAi-
+		f.rs2.value+AD0AIgAi-
+		f.f.value+AD0AIgAi-
+		f.myselectvalue.value+AD0AIgAi-
+		f.z.value+AD0AIgAi-
+		f.from.value+AD0AIgAi-
+		+AH0-
+	if (f.sc.value+AD0APQAi-web+ACI-)
+	+AHs-
+	    f.cl.value+AD0-3
+		f.tn.value+AD0AIg-hao123+ACI-
+		f.ct.value+AD0-0
+		f.ie.value+AD0AIg-gb2312+ACI-
+		f.myselectvalue.value+AD0AIgAi-
+		f.rn.value+AD0AIgAi-
+		f.rs2.value+AD0AIgAi-
+		f.z.value+AD0AIgAi-
+		f.from.value+AD0AIgAi-
+		f.lm.value+AD0AIgAi-
+		+AH0-
+	if (f.sc.value+AD0APQAi-mp3+ACI-)
+	+AHs-
+	    f.ct.value+AD0-134217728
+		f.lm.value+AD0--1
+		f.rn.value+AD0AIgAi-
+		f.cl.value+AD0AIgAi-
+		f.tn.value+AD0AIg-baidump3+ACI-
+		f.f.value+AD0AIg-ms+ACI-
+		f.myselectvalue.value+AD0AIgAi-
+		f.ie.value+AD0AIg-gb2312+ACI-
+		f.z.value+AD0AIgAi-
+		f.from.value+AD0AIgAi-
+		+AH0-
+	if (f.sc.value+AD0APQAi-news+ACI-)
+	+AHs-
+	    f.tn.value+AD0AIg-news+ACI-
+		f.cl.value+AD0-2
+		f.rn.value+AD0-20
+		f.ct.value+AD0-0
+	    f.z.value+AD0AIgAi-
+		f.from.value+AD0AIg-news+ACI-
+		f.ie.value+AD0AIgAi-
+		f.myselectvalue.value+AD0AIgAi-
+		f.lm.value+AD0AIgAi-
+		f.rs2.value+AD0AIgAi-
+	    +AH0-
+		return true+ADs-
++AH0-
+function haoSubSearch(sc)+AHs-
+	changePage(sc)+ADs-
+	if(sc +ACEAPQ- +ACI-baidu+ACI-)+AHs-
+		if(sc +AD0APQ- +ACI-post+ACI-)
+		+AHs-
+		    f.action +AD0- +ACI-http://tieba.baidu.com/f+ACIAOw-
+
+		+AH0-
+		else if(sc +AD0APQ- +ACI-zhidao+ACI-)
+		+AHs-
+			f.action +AD0- +ACI-http://zhidao.baidu.com/q+ACIAOw-
+
+		+AH0-
+		else if(sc +AD0APQ- +ACI-mp3+ACI-)
+		+AHs-
+			f.action +AD0- +ACI-http://mp3.baidu.com/m+ACIAOw-
+
+		+AH0-
+		else if(sc +AD0APQ- +ACI-img+ACI-)
+		+AHs-
+			f.action +AD0- +ACI-http://image.baidu.com/i+ACIAOw-
+
+		+AH0-
+		else if(sc +AD0APQ- +ACI-news+ACI-)
+		+AHs-
+			f.action +AD0- +ACI-http://news.baidu.com/ns+ACIAOw-
+
+		+AH0-
+		else if(sc +AD0APQ- +ACI-video+ACI-)
+		+AHs-
+			f.action +AD0- +ACI-http://video.baidu.com/v+ACIAOw-
+
+		+AH0-
+		else
+		+AHs-
+			f.action +AD0- +ACI-http://www.baidu.com/s+ACIAOw-
+
+		+AH0-
+		f.sc.value +AD0- sc+ADs-
+	+AH0-
+	else+AHs-
+		f.sc.value +AD0- +ACI-post+ACIAOw-
+		haoGoSoba()+ADs-
+	+AH0-
++AH0-
+
+function haoGoSoba()+AHs-
+
+	f.action +AD0- +ACI-http://www.baidu.com/s+ACIAOw-
+	f.kw.value +AD0- f.word.value+ADs-
++AH0-
+function G(id)
++AHs-
+ return document.getElementById(id)+ADs-
++AH0-
+function changePage(sc)+AHs-
+	if(haoCurrHighLight +AD0APQ- null)+AHs-
+		haoCurrHighLight +AD0- document.getElementById(+ACI-haoweb+ACI-)+ADs-
+	+AH0-
+	haoCurrHighLight.className +AD0- +ACI-searchfod2+ACIAOw-
+	haoCurrHighLight +AD0- document.getElementById(+ACI-hao+ACIAKw-sc)+ADs-
+	haoCurrHighLight.className +AD0- +ACI-searchfod1+ACIAOw-
+	document.f.word.focus()
+	 f.word.value+AD0AIgAiADs-
++AH0-
+function isSoba()+AHs-
+	if(haoCurrHighLight +AD0APQ- document.getElementById(+ACI-haosoba+ACI-))+AHs-
+		haoGoSoba()+ADs-
+		return true+ADs-
+	+AH0-
+	else+AHs-
+		return true+ADs-
+	+AH0-
++AH0-
+function goSearch()+AHs-
+	if(+ACE-haoValidate(1))
+	+AHs-
+			return false+ADs-
+			+AH0-
+	else+AHs-
+	 return false+ADs-
+	 +AH0-
++AH0-
+
++ADw-/SCRIPT+AD4-
++ADw-div align+AD0AIg-center+ACIAPgA8-center+AD4-
++ADw-table border+AD0AIg-0+ACI- cellpadding+AD0AIg-0+ACI- cellspacing+AD0AIg-0+ACI- width+AD0AIg-900+ACI- height+AD0AIg-51+ACIAPg-
+    +ADw-tr+AD4-
+      +ADw-td width+AD0AIg-290+ACI- height+AD0AIg-51+ACIAPgA8-a href+AD0AIg-/+ACI- target+AD0AIgBf-self+ACI- class+AD0AIg-m+ACIAPgA8-img src+AD0AIg-images/logo+AF8-new.gif+ACI- alt+AD0AIg-kuudoo??????+ACI-    width+AD0AIg-168+ACI- height+AD0AIg-63+ACI- border+AD0AIg-0+ACIAPgA8-/a+AD4APA-/td+AD4-
+     +ADw-td height+AD0AIg-51+ACI- align+AD0AIg-center+ACIAPg-
++ADw-p class+AD0AIg-WB+ACIAPg-
++ADw-table width+AD0-100+ACU- border+AD0-0 cellspacing+AD0-0 cellpadding+AD0-0 style+AD0AIg-margin-bottom:-6px +ACIAPgA8-tr+AD4APA-td width+AD0-2 height+AD0-18+AD4- +ADw-/td+AD4APA-td  valign+AD0-bottom class+AD0-searchfod1 id+AD0-haoweb onClick+AD0AIg-haoSubSearch('web')+ADs-goSearch()+ACI- onmousedown+AD0AIg-ClickMonkey.log('haoweb')+ADsAIg- +AD4-?? ?+ADw-/td+AD4APA-td width+AD0AIg-4+ACIAPgA8-/td+AD4APA-td valign+AD0-bottom class+AD0-searchfod2 id+AD0-haomp3 onClick+AD0AIg-haoSubSearch('mp3')+ADs-goSearch()+ACI- onmousedown+AD0AIg-ClickMonkey.log('haomp3')+ADsAIg- +AD4-MP3+ADw-/td+AD4- +ADw-td width+AD0AIg-4+ACIAPgA8-/td+AD4APA-td valign+AD0-bottom   class+AD0-searchfod2 id+AD0-haoimg onClick+AD0AIg-haoSubSearch('img')+ADs-goSearch()+ACI- onmousedown+AD0AIg-ClickMonkey.log('haoimg')+ADsAIg- +AD4-? ?+ADw-/td+AD4APA-td width+AD0AIg-4+ACIAPgA8-/td+AD4APA-td valign+AD0-bottom class+AD0-searchfod2 id+AD0-haopost onClick+AD0AIg-haoSubSearch('post')+ADs-goSearch()+ACI- onmousedown+AD0AIg-ClickMonkey.log('haopost')+ADsAIg- +AD4-?? ??+ADw-/td+AD4APA-td width+AD0AIg-4+ACIAPgA8-/td+AD4APA-td  valign+AD0-bottom class+AD0-searchfod2 id+AD0-haozhidao onClick+AD0AIg-haoSubSearch('zhidao')+ADs-goSearch()+ACI- onmousedown+AD0AIg-ClickMonkey.log('haozhidao')+ADsAIg- +AD4-? ??+ADw-/td+AD4APA-td width+AD0AIg-4+ACIAPgA8-/td+AD4APA-td  valign+AD0-bottom class+AD0-searchfod2 id+AD0-haonews onClick+AD0AIg-haoSubSearch('news')+ADs-goSearch()+ACI- onmousedown+AD0AIg-ClickMonkey.log('haonews')+ADsAIg- +AD4-?? ??+ADw-/td+AD4APA-td width+AD0AIg-4+ACIAPgA8-/td+AD4APA-td valign+AD0-bottom class+AD0-searchfod2 id+AD0-haovideo onClick+AD0AIg-haoSubSearch('video')+ADs-goSearch()+ACI- onmousedown+AD0AIg-ClickMonkey.log('haovideo')+ADsAIgA+-?? ?+ADw-/td+AD4APA-td width+AD0AIg-4+ACIAPgA8-/td+AD4APA-td  width+AD0-240 valign+AD0-bottom+AD4- +ADw-/td+AD4APA-/tr+AD4APA-/table+AD4-
++ADw-table border+AD0AIg-0+ACI- cellspacing+AD0AIg-0+ACI- cellpadding+AD0AIg-0+ACI- id+AD0-FrP+AD4APA-tr+AD4APA-form onSubmit+AD0AIg-return haoValidate()+ADsAIg- action+AD0-http://www.baidu.com/s name+AD0-f+AD4APA-td align+AD0AIg-left+ACIAPgA8-INPUT type+AD0-hidden name+AD0-kw+AD4APA-INPUT type+AD0-hidden name+AD0-sc+AD4APA-input type+AD0-hidden name+AD0-cl value+AD0-3+AD4APA-input type+AD0-hidden name+AD0-tn value+AD0-hao123+AD4APA-input type+AD0-hidden name+AD0-ct+AD4APA-input type+AD0-hidden name+AD0-rn+AD4APA-input type+AD0-hidden name+AD0-lm+AD4APA-input type+AD0-hidden name+AD0-ie+AD4APA-input type+AD0-hidden name+AD0-rs2+AD4APA-input type+AD0-hidden name+AD0-myselectvalue+AD4APA-input type+AD0-hidden name+AD0-f+AD4APA-input type+AD0-hidden name+AD0-pv+AD4APA-input type+AD0-hidden name+AD0-z+AD4APA-input type+AD0-hidden name+AD0-from+AD4-
++ADw-input type+AD0AIg-text+ACI- name+AD0AIg-word+ACI- size+AD0-38 maxlength+AD0AIg-100+ACI- class+AD0AIg-kw+ACI- id+AD0AIg-kww+ACI-  style+AD0AIg-margin-bottom:-5px+ADs- font-size:16px+ADs-height:1.78em+ADs-font-family:arial,sans-serif,????+ADs-padding-top:2px+ADs- padding-left:1px+ACIAPg- +ADw-input type+AD0-submit value+AD0-?????? style+AD0AIg-height:1.82em+ADs-width:6.4em+ADs-font-size:16px+ADs- margin-bottom:-5px+ADs- padding-top:2px+ACI-  class+AD0-sb monkey+AD0AIg-submit+ACIAPg-
++ADw-/span+AD4-
++ADw-/td+AD4-
++ADw-/form+AD4APA-/tr+AD4APA-/table+AD4APA-/p+AD4-
++ADw-/td+AD4-
+	+ADw-/tr+AD4-
+  +ADw-/table+AD4-
++ADw-/center+AD4APA-/div+AD4-
++ADw-script language+AD0-javascript+AD4-
++ADwAIQ---
+document.f.word.focus()
+window.onload +AD0- function()+AHs-
+	haoSubSearch(+ACI-web+ACI-)+ADs-
+	goSearch()+ADs-
++AH0-
+//--+AD4-
++ADw-/script+AD4-
++ADw-div align+AD0AIg-center+ACIAPgA8-center+AD4-
+ +ADw-table border+AD0-0 cellPadding+AD0-0 cellSpacing+AD0-0 width+AD0-900 height+AD0-1+AD4APA-tr align+AD0-center+AD4APA-td height+AD0AIg-1+ACI- bgcolor+AD0AIg-C1D0D7+ACIAPgA8-/td+AD4APA-/tr+AD4APA-/table+AD4-
++ADw-table width+AD0-900 height+AD0-25 bgcolor+AD0AIw-EEF7FF border+AD0-0 cellspacing+AD0-0 cellspadding+AD0-2+AD4APA-tr+AD4-
++ADw-td width+AD0AIg-50+ACUAIg- class+AD0AIg-f9pt+ACI- style+AD0AIg-color:+ACM-424242 +ACIAPg- +ADw-a href+AD0AIg-http://www.kuudoo.net+ACI- onClick+AD0AIg-this.style.behavior+AD0-'url(+ACM-default+ACM-homepage)'+ADs-this.setHomePage('http://www.kuudoo.net/')+ADs-return(false)+ADsAIg- style+AD0AIg-behavior: url(+ACM-default+ACM-homepage)+ADs- color:+ACM-D35E04+ACIAPgA8-img src+AD0AIg-images/home.gif+ACI- width+AD0AIg-15+ACI- height+AD0AIg-15+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPg- ??kuudoo??????+ADw-/a+AD4-????+ADw-a href+AD0AIg-book/+ACIAPgA8-img src+AD0AIg-images/notebook.gif+ACI- width+AD0AIg-15+ACI- height+AD0AIg-15+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPg- ????????+ADw-/a+AD4- +ADw-/td+AD4APA-td align+AD0AIg-right+ACI- class+AD0AIg-f9pt+ACI- style+AD0AIg-color:+ACM-424242+ADs- padding-right:10px+ACIAPgA8-a href+AD0AIg-/+ACI- target+AD0AXw-self style+AD0AIg-color:+ACM-424242 +ACIAPg-???+ADw-/a+AD4- +AD4- ???+ADw-/td+AD4APA-/tr+AD4APA-/table+AD4-
++ADw-/center+AD4APA-/div+AD4-
++ADw-div align+AD0AIg-center+ACI- onmousedown+AD0AIg-bdRecord.scope(event)+ACIAPgA8-center+AD4-
++ADw-div class+AD0AIg-t1 bgg+ACIAPg-
++ADw-table width+AD0AIg-100+ACUAIg- border+AD0AIg-0+ACI- cellspacing+AD0AIg-0+ACI- cellpadding+AD0AIg-0+ACIAPg-
++ADwAIQ---??????--+AD4-
++ADwAIQ---??????--+AD4-
++ADwAIQ---??????--+AD4-
++ADwAIQ---??????--+AD4-
++ADwAIQ---??????--+AD4-
++ADwAIQ---??????--+AD4-
++ADwAIQ---??????--+AD4-
++ADw-tr bgcolor+AD0AIgAj-D9EDDA+ACIAPg-
+	+ADw-td height+AD0AIg-20+ACI- class+AD0AIg-f9pt+ACI- align+AD0AIg-center+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-???????+ADw-/font+AD4APA-/td+AD4-
++ADw-/tr+AD4-
+
++ADw-tr bgcolor+AD0AIg-C5D5C5+ACIAPg-
+	+ADw-td +AD4-
+		+ADw-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-7+ACIAPg-
+						+ADw-tr bgcolor+AD0AIgAj-EFF7F0+ACIAPg-					+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.skycn.com/+ACIAPg-???????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.onlinedown.net/+ACIAPg-????????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://dl.pconline.com.cn/+ACIAPg-????????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://tech.sina.com.cn/down/+ACIAPg-????????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://xiazai.zol.com.cn/+ACIAPg-?????????+ADw-/a+AD4APA-/td+AD4-
+		
+				+ADw-/tr+AD4-						+ADw-tr bgcolor+AD0AIgAj-EFF7F0+ACIAPg-					+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://soft.gougou.com/+ACIAPg-???????????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.mydrivers.com/+ACIAPg-???????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.crsky.com/+ACIAPg-??????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://download.pchome.net/+ACIAPg-PChome????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://download.it168.com/+ACIAPg-IT168 ????+ADw-/a+AD4APA-/td+AD4-
+		
+				+ADw-/tr+AD4-						+ADw-tr bgcolor+AD0AIgAj-EFF7F0+ACIAPg-					+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.kuudoo.net/soft/default.htm+ACIAPg-???????????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.kuudoo.net/soft/shouji/default.htm+ACIAPg-??????????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.xdowns.com/+ACIAPg-??????????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.win7china.com/+ACIAPg-Win7???+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.microsoft.com/china+ACIAPg-?????????????+ADw-/a+AD4APA-/td+AD4-
+		
+				+ADw-/tr+AD4-						+ADw-tr bgcolor+AD0AIgAj-EFF7F0+ACIAPg-					+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.kuudoo.net/soft/harcksafe/default.htm+ACIAPg-?????????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.adobe.com/cn/+ACIAPg-Adobe+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.wps.cn/+ACIAPg-WPS+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ADw-a href+AD0AIg-http://www.skycn.com/soft/64892.html+ACIAPg-?????????????+ADw-/a+AD4APA-/td+AD4-
+		
+											+ADw-td  width+AD0AIg-20+ACUAIgA+ACY-nbsp+ADsAPA-/td+AD4-
+		
+				+ADw-/tr+AD4-				+ADw-/table+AD4-
+	+ADw-/td+AD4-
++ADw-/tr+AD4-
+
++ADw-tr bgcolor+AD0AIg-C5D5C5+ACIAPg-
+	+ADw-td +AD4-
++ADw-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellpadding+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- bgcolor+AD0AIg-C5D5C5+ACIAPg-
+    +ADw-tr align+AD0AIg-center+ACI- bgcolor+AD0AIgAj-D9EDDA+ACIAPg-
+      +ADw-td width+AD0AIg-20+ACUAIg- height+AD0AIg-20+ACI- class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-???????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td width+AD0AIg-20+ACUAIg- class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-???????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td width+AD0AIg-20+ACUAIg- class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-???????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td width+AD0AIg-20+ACUAIg- class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td width+AD0AIg-20+ACUAIg- class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-?????+ADw-/font+AD4APA-/td+AD4-
+    +ADw-/tr+AD4-
+    +ADw-tr bgcolor+AD0AIgAj-EFF7F0+ACIAPg-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://im.qq.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/qq.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???QQ+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.windowslive.cn/Messenger/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/dmsnmessenger.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-MSN+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://im.baidu.com/+ACIAPgA8-img src+AD0AIg-soft/images/baiduhi.gif+ACI- width+AD0AIg-18+ACI- height+AD0AIg-19+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???HI+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://feixin.10086.cn/download/+ACIAPgA8-img src+AD0AIg-soft/shouji/images/fetion.gif+ACI- width+AD0AIg-18+ACI- height+AD0AIg-15+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.taobao.com/wangwang/+ACIAPgA8-img src+AD0AIg-soft/images/wangwang18.gif+ACI- width+AD0AIg-18+ACI- height+AD0AIg-15+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACI- bgcolor+AD0AIgAj-EFF7F0+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://j.union.ijinshan.com/jump.php?u+AF8-key+AD0-552+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/kingsoft18.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.rising.com.cn/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/rising.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-  align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://sd.360.cn/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/360.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-360???+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACI- bgcolor+AD0AIgAj-EFF7F0+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+
+        +ADw-tr+AD4-
+          +ADw-td+AD4- +ADw-a href+AD0AIg-http://download.ppstream.com/hz/ppstreamsetup+AF8-spl001+AEA-xp293.exe+ACIAPgA8-img src+AD0AIg-soft/images/ppstream.jpg+ACI- width+AD0AIg-18+ACI- height+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-PPS+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://partner.funshion.com/partner/download.php?id+AD0-126+ACY-sv+AD0-5009199+ACIAPgA8-img src+AD0AIg-soft/images/funshion.gif+ACI- width+AD0AIg-18+ACI- height+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://j.union.ijinshan.com/jump.php?u+AF8-key+AD0-20626+ACIAPgA8-img src+AD0AIg-soft/images/uusee18.gif+ACI- width+AD0AIg-18+ACI- height+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-UUSee+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://j.union.ijinshan.com/jump.php?u+AF8-key+AD0-2907+ACIAPgA8-img src+AD0AIg-soft/images/pplive.gif+ACI- width+AD0AIg-18+ACI- height+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-PPTV+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACI- bgcolor+AD0AIgAj-EFF7F0+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+	  +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://pinyin.sogou.com/+ACIAPgA8-img src+AD0AIg-soft/images/sogopy.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.onlinedown.net/soft/7677.htm+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/jipin6.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-??????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://py.qq.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/qqpy.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-QQ???+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		+ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://typeeasy.kingsoft.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/typeeasy.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+	  
+     +ADw-tr+AD4-
+            +ADw-td+AD4APA-a href+AD0AIg-http://www.gw.com.cn/download/level1/index.htm+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/dzh.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-?????+ADw-/a+AD4APA-/td+AD4-
+          +ADw-/tr+AD4-
+          +ADw-tr+AD4-
+            +ADw-td+AD4APA-a href+AD0AIg-http://www.10jqka.com.cn/download/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/ths.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????+ADw-/a+AD4APA-/td+AD4-
+          +ADw-/tr+AD4-
+          
+      +ADw-/table+AD4APA-/td+AD4-
+    +ADw-/tr+AD4-
+    +ADw-tr align+AD0AIg-center+ACI- bgcolor+AD0AIgAj-D9EDDA+ACIAPg-
+      +ADw-td height+AD0AIg-20+ACI- class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-???????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-???????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-MP3????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-?????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-???????+ADw-/font+AD4APA-/td+AD4-
+    +ADw-/tr+AD4-
+    +ADw-tr bgcolor+AD0AIgAj-EFF7F0+ACIAPg-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://dl.xunlei.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/Thunder.gif+ACI- width+AD0AIg-18+ACI- height+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.emule.org.cn/download/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/emule.gif+ACI- width+AD0AIg-18+ACI-   border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-eMule(???)+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://xf.qq.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/xf.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-QQ????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.flashget.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/flashget.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-??+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACI- bgcolor+AD0AIgAj-EFF7F0+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.baofeng.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/bfyy.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-  align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.qvod.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/qvod.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-??qvod+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://get.adobe.com/flashplayer/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/flashplayer.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-Flash Player+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://realplayer.cn.real.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/realplay.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-RealPlayer+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.koowo.com/mbox.down2?src+AD0-kwun4059+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/kuwo.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-?????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.kugou.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/kugoo.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-??+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://ttplayer.qianqian.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/ttplayer.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-??????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-	
+
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://qqgame.qq.com/download.shtml+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/qqgame.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-QQ???????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.ourgame.com/download/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/lianzhong.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.cga.com.cn/download.shtml+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/haofang.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+         +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://game1.vsa.com.cn/vsmain/jsp/down/down.html+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/vs+AF8-15.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-VS?????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+         +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.yy.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/duowan+AF8-15.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????YY+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.ispeak.cn/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/is+AF8-15.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-   align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-iS????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		+ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.alicall.com/down.asp?linkid+AD0-8930492+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/ut+AF8-15.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-   align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-?????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		+ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.uucall.com/tj39s2q.html+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/Daemon.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-   align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-UUcall??????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        
+      +ADw-/table+AD4APA-/td+AD4-
+    +ADw-/tr+AD4-
+    +ADw-tr align+AD0AIg-center+ACI- bgcolor+AD0AIgAj-D9EDDA+ACIAPg-
+      +ADw-td height+AD0AIg-20+ACI- class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-???????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-??????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-?????+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-???/???+ADw-/font+AD4APA-/td+AD4-
+      +ADw-td class+AD0AIg-f9pt clo+ACIAPgA8-font color+AD0AIgAj-346F0E+ACIAPg-??????+ADw-/font+AD4APA-/td+AD4-
+    +ADw-/tr+AD4-
+    +ADw-tr bgcolor+AD0AIgAj-EFF7F0+ACIAPg-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+        
+       
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.ijinshan.com/ws/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/ijinshan.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-   align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-??????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		+ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.360.cn/+ACIAPgA8-img src+AD0AIg-soft/images/360.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-360??????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		+ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://tool.ikaka.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/kaka+AF8-s.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-   align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		
+
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.ludashi.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/z.jpg+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-   align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-3???+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		  +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.downg.com/soft/302.html+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/WinRAR.gif+ACI- width+AD0AIg-18+ACI-  border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-WinRAR+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.drivergenius.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/drivergenius.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-    align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.updrv.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/updrv.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-    align+AD0AIg-absmiddle+ACIAPg- ????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+	  +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.skycn.com/soft/30276.html+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/msie5ico.gif+ACI- width+AD0AIg-18+ACI-  border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-IE+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.maxthon.cn/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/myie2.gif+ACI- width+AD0AIg-18+ACI-  border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.mozillaonline.com/+ACIAPgA8-img src+AD0AIg-soft/images/firefox.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		 +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.google.com/chrome+ACIAPgA8-img src+AD0AIg-soft/images/chrome+AF8-18.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		  
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.skycn.com/soft/3076.html+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/adobereader.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-Adobe Reader+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://cn.acdsee.com/zh-cn/download/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/ACDSee.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-   align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-ACDSee+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-   
+        +ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://xiuxiu.meitu.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/xiuxiu.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-   align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-???????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		+ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://www.neoimaging.cn/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/neoimaging.jpg+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-   align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-????????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+		+ADw-tr+AD4-
+          +ADw-td+AD4APA-a href+AD0AIg-http://yx.keniu.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/images/keniu.gif+ACI- width+AD0AIg-18+ACI- border+AD0AIg-0+ACI-   align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-??????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+
+      +ADw-/table+AD4APA-/td+AD4-
+      +ADw-td valign+AD0AIg-top+ACIAPgA8-table width+AD0AIg-100+ACUAIg-  border+AD0AIg-0+ACI- cellspacing+AD0AIg-1+ACI- cellpadding+AD0AIg-5+ACIAPg-
+        +ADw-tr+AD4-
+          +ADw-td colspan+AD0AIg-2+ACIAPgA8-a href+AD0AIg-http://mobile.qq.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/shouji/images/qq.gif+ACI- width+AD0AIg-18+ACI-   border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-?????QQ+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td colspan+AD0AIg-2+ACIAPgA8-a href+AD0AIg-http://www.uc.cn/ +ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/shouji/images/ucweb.gif+ACI- width+AD0AIg-18+ACI-   border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-UCWEB+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td colspan+AD0AIg-2+ACIAPgA8-a href+AD0AIg-http://www.blovestorm.com/+ACI- target+AD0AIgBf-blank+ACIAPgA8-img src+AD0AIg-soft/shouji/images/blovestorm.gif+ACI- width+AD0AIg-20+ACI- border+AD0AIg-0+ACI- align+AD0AIg-absmiddle+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-?????+ADw-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+        +ADw-tr+AD4-
+          +ADw-td width+AD0AIg-50+ACUAIgA+ADw-/td+AD4-
+          +ADw-td width+AD0AIg-50+ACUAIgA+ACY-nbsp+ADsAPA-a href+AD0AIg-http://www.kuudoo.net/soft/shouji/default.htm+ACI-  class+AD0AIg-f14+ACIAPg-????+AD4APgA8-/a+AD4APA-/td+AD4-
+        +ADw-/tr+AD4-
+      +ADw-/table+AD4APA-/td+AD4-
+    +ADw-/tr+AD4-
++ADw-/table+AD4-
+	+ADw-/td+AD4-
++ADw-/tr+AD4-
++ADw-/table+AD4-
++ADw-/div+AD4-
++ADw-/center+AD4APA-/div+AD4-
++ADw-DIV align+AD0-center+AD4APA-br+AD4APA-a href+AD0AIg-/+ACI- target+AD0AIgBf-self+ACIAPgA8-img src+AD0AIg-images/return.gif+ACI- width+AD0AIg-60+ACI- height+AD0AIg-30+ACI- alt+AD0AIg-?????????+ACI- border+AD0AIg-0+ACIAPgA8-/a+AD4APA-/DIV+AD4-
+
++ADw-span style+AD0AIg-display:none+ACIAPgA8-script src+AD0AIg-js/tj.js+ACIAPgA8-/script+AD4APA-/span+AD4-
++ADw-/body+AD4-
++ADw-/html+AD4-
