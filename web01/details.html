@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>超短线已订阅详情</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body class="Grey">
+<div class="dx_details">
+	<h3><span>今日选股</span><code>04-08  14:09</code></h3>
+    <div class="xg"><a>银华日利<span>511880</span></a><a>银华日利<span>511880</span></a></div>
+</div>
+<div class="dx_sj">
+	<h3>驱动事件</h3>
+    <p>液态金属业务开始贡献营收。公司作为国内较早进行液态金属研发的企业，已掌握液态金属产品在材料、工艺、设备等方面的核心技术，是行业内极少数实现
+液态金属精密结构件在消费电子领域商用的供应商之一。公司液态金属在小件领域已经有应用。</p>
+</div>
+<div class="dx_zs">
+	<h3>分析师情绪指标</h3>
+    <div class="zs_nav">
+    	<ul>
+        	<li class="on"><img src="img/js_01.png"><code></code></li>
+            <li><img src="img/js_02.png"><code></code></li>
+            <li><img src="img/js_03.png"><code></code></li>
+        </ul>
+        <div class="border"></div>
+    </div>
+    <div class="zs_list">
+    	<ul>
+        	<li>
+            	<a>谨慎</a>
+                <p>预计市场处于弱势状态或即将转入弱势，风险指数强，谨慎投资。</p>
+            </li>
+            <li>
+            	<a>适中</a>
+                <p>预计市场处于弱势状态或即将转入弱势，风险指数强，谨慎投资。</p>
+            </li>
+            <li>
+            	<a>乐观</a>
+                <p>预计市场处于弱势状态或即将转入弱势，风险指数强，谨慎投资。</p>
+            </li>
+        </ul>
+        <div class="page"><a>下一篇&gt;</a></div>
+    </div>
+</div>
+
+<div id="foot-list">
+    <ul>
+        <li><a href="index.html"><img src="img/nav11.png"><span>首页</span></a></li>
+        <li><a href="#"><img src="img/nav21.png"><span>超短线</span></a></li>
+        <li><a href="#"><img src="img/nav31.png"><span>机构池</span></a></li>
+        <li><a href="gr_center.html" class="dq"><img src="img/nav42.png"><span>个人中心</span></a></li>
+    </ul>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/tool.js"></script> 
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript" src="js/auto.js"></script>
+<script>
+$(function(){
+$('#slider').mBanner('slider');
+});
+</script>
+<script type="text/javascript">
+$(".informationBox ul li a").click(function(){
+	$(".informationBox ul li a").find("contentM").addClass("stat").siblings().removeClass("stat");
+	var index=$(".informationBox ul li a").index(this);
+	$(".informationBox ul li a .contentM").eq(index).css('display','block');
+	var div2=$(this).find('div').get(1);
+	
+	if($(div2).hasClass("don")){
+		$(div2).css("display","none");
+		$(div2).removeClass("don");
+		$($(this).find('div').get(0)).css("display","block");
+	}else{
+		$(".informationBox ul li a .contentM").removeClass("don");
+		$(".informationBox ul li a .tit1").css("display","block");
+		$(".informationBox ul li a .contentM").css("display","none");
+		$(div2).css("display","block");
+		$(div2).addClass("don");
+		$($(this).find('div').get(0)).css("display","none");
+	}
+});
+$("#colce").click(function(){
+	$("#formBox").hide();
+	});
+</script>
+</body>
+</html>

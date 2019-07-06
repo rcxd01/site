@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>机构池已订阅</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body class="Grey">
+<div class="dy_list">
+	<ul>
+    	<li><a href="#"><img src="img/ioc4.jpg"><span>机构池产品剩余<b>226</b>天</span><img class="jt" src="img/gr_03.png"><code>去续订</code></a></li>
+    </ul>
+    <p>【机构池】资讯将于每日早上十点推送哦！</p>
+</div>
+
+<div id="foot-list">
+    <ul>
+        <li><a href="index.html"><img src="img/nav11.png"><span>首页</span></a></li>
+        <li><a href="#"><img src="img/nav21.png"><span>超短线</span></a></li>
+        <li><a href="#"><img src="img/nav31.png"><span>机构池</span></a></li>
+        <li><a href="gr_center.html" class="dq"><img src="img/nav42.png"><span>个人中心</span></a></li>
+    </ul>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/tool.js"></script> 
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript" src="js/auto.js"></script>
+<script>
+$(function(){
+$('#slider').mBanner('slider');
+});
+</script>
+<script type="text/javascript">
+$(".informationBox ul li a").click(function(){
+	$(".informationBox ul li a").find("contentM").addClass("stat").siblings().removeClass("stat");
+	var index=$(".informationBox ul li a").index(this);
+	$(".informationBox ul li a .contentM").eq(index).css('display','block');
+	var div2=$(this).find('div').get(1);
+	
+	if($(div2).hasClass("don")){
+		$(div2).css("display","none");
+		$(div2).removeClass("don");
+		$($(this).find('div').get(0)).css("display","block");
+	}else{
+		$(".informationBox ul li a .contentM").removeClass("don");
+		$(".informationBox ul li a .tit1").css("display","block");
+		$(".informationBox ul li a .contentM").css("display","none");
+		$(div2).css("display","block");
+		$(div2).addClass("don");
+		$($(this).find('div').get(0)).css("display","none");
+	}
+});
+$("#colce").click(function(){
+	$("#formBox").hide();
+	});
+</script>
+</body>
+</html>
